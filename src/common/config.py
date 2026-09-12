@@ -9,7 +9,7 @@ This module is used to load and validate the project configuration file config/s
 import os
 import sys
 import logging
-from typing import Any, Dict
+from typing import Any, Dict, List
 
 # 获取项目根目录 / Get project root directory
 # src/common/config.py -> src/common -> src -> project_root
