@@ -1,0 +1,22 @@
+# File and directory paths (Relative to project root)
+[paths]
+output_dir = "output"
+log_dir = "logs"
+
+# Network configuration for address lists / 局域网网段配置
+[network]
+# Intranet LAN CIDRs to include in exist_line / 加入 exist_line 的局域网保留网段
+lan_internal = [
+    "10.0.0.0/8",          # RFC 1918 Standard Class A
+    "172.16.0.0/12",       # RFC 1918 Standard Class B
+    "192.168.0.0/16",      # RFC 1918 Standard Class C
+    "100.64.0.0/10",       # RFC 6598 Carrier-Grade NAT
+    "127.0.0.0/8",         # Loopback
+]
+
+# QQwry IP database configuration for Jiangsu address list / 纯真 IP 库配置
+[qqwry]
+qqwry_path = "/tmp/qqwry.dat"
+download_url = "https://github.com/metowolf/qqwry.dat/releases/latest/download/qqwry.dat"
+min_count = 1500
+

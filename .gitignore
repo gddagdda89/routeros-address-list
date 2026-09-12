@@ -1,0 +1,22 @@
+# Python virtual environment and cache
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Local settings containing sensitive RouterOS and FTP credentials
+config/settings.toml
+
+# Operational logs and temporary files
+logs/
+output/*.tmp
+
+# Editor and IDE environments
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

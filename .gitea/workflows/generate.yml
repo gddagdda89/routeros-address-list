@@ -1,0 +1,57 @@
+name: Generate RouterOS Address Lists
+
+on:
+  schedule:
+    # 每周日北京时间凌晨 04:00 (UTC 时间周六 20:00) 自动触发
+    - cron: '0 20 * * 6'
+  workflow_dispatch:
+
+jobs:
+  build-and-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Test Suite
+        run: |
+          pytest
+
+      - name: Download QQwry IP Database
+        run: |
+          curl -sL https://github.com/metowolf/qqwry.dat/releases/latest/download/qqwry.dat -o /tmp/qqwry.dat
+
+      - name: Generate Address List RSC Files
+        run: |
+          python -m src.address_list_rsc.main
+          python -m src.address_list_rsc.mainv6
+          python -m src.address_list_rsc.china
+          python -m src.address_list_rsc.cloudflare
+          python -m src.address_list_rsc.regions
+
+      - name: Clean up temporary files
+        if: always()
+        run: |
+          rm -f /tmp/qqwry.dat
+
+      - name: Commit and Push Changes
+        run: |
+          git config user.name "Gitea Actions"
+          git config user.email "gitea-actions[bot]@noreply.localhost"
+          git add output/*.rsc output/regions/*.rsc
+          if git diff --staged --quiet; then
+            echo "地址列表产物无任何变动，跳过提交。"
+          else
+            git commit -m "chore(auto): 定期自动更新 RouterOS 地址列表产物 [skip ci]"
+            git push
+          fi
