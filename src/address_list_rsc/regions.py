@@ -17,7 +17,7 @@ from typing import List, Tuple, Dict, Optional, Any
 from src.common.config import get_setting, resolve_path
 from src.common.logging import setup_logger
 from src.common.http import safe_write_file, DataValidationError
-from src.address_list_rsc.jiangsu import ensure_qqwry_file, _read_int3, _read_int4, _extract_location_string, DEFAULT_QQWRY_DOWNLOAD_URL
+from src.common.qqwry import ensure_qqwry_file, read_int3, read_int4, extract_location_string, DEFAULT_QQWRY_DOWNLOAD_URL
 
 # 初始化日志器 / Initialize logger
 logger = setup_logger("regions")
@@ -90,8 +90,8 @@ def parse_all_provincial_records(data: bytes) -> Dict[str, List[List[Any]]]:
     Returns:
         字典：省份中文名 -> 聚合后的 IP 列表 [[ip_b, ip_e, city, isp], ...]
     """
-    idx_start = _read_int4(data, 0)
-    idx_end = _read_int4(data, 4)
+    idx_start = read_int4(data, 0)
+    idx_end = read_int4(data, 4)
     total_segments = (idx_end - idx_start) // 7 + 1
     logger.info(f"开始全国省份单次扫描，总索引段数: {total_segments:,}")
 
@@ -100,13 +100,13 @@ def parse_all_provincial_records(data: bytes) -> Dict[str, List[List[Any]]]:
 
     for i in range(1, total_segments):
         cur = idx_start + i * 7
-        off = _read_int3(data, cur + 4)
-        c, p = _extract_location_string(data, off + 4)
+        off = read_int3(data, cur + 4)
+        c, p = extract_location_string(data, off + 4)
 
         for name, _, _ in PROVINCES:
             if name in c:
-                ip_b = _read_int4(data, cur)
-                ip_e = _read_int4(data, off)
+                ip_b = read_int4(data, cur)
+                ip_e = read_int4(data, off)
 
                 # 提取城市信息（剔除中国与省名）
                 parts = c.replace("–", "-").split("-")
@@ -201,11 +201,6 @@ def generate_all_regions(output_dir: str, qqwry_path: Optional[str] = None) -> N
             content_io.write(f':do {{ add address={addr} list={list_name} comment="{comment}" }} on-error={{}}\n')
 
         safe_write_file(out_file, content_io.getvalue())
-
-        # 若为江苏省，向前兼容输出一份到根目录 output/region_jiangsu.rsc
-        if slug == "jiangsu":
-            root_jiangsu_file = os.path.join(output_dir, "region_jiangsu.rsc")
-            safe_write_file(root_jiangsu_file, content_io.getvalue())
 
     logger.info(f"全国 34 个省份地址列表已成功写入至: {regions_dir}/")
 

@@ -1,6 +1,6 @@
 # RouterOS Address List Generator
 
-> **项目说明**：本项目基础逻辑最初于 2023 年由人工编写并在生产环境中稳定运行，后续由 AI 辅助完成模块化重构、异常门限熔断保护、全国 34 省份扩展及 README 编写。
+> **项目说明**：本项目基础逻辑最初于 2023 年由人工编写并在生产环境中稳定运行，后续由 AI 辅助完成模块化重构、异常门限熔断保护、全国 34 省份扩展及 README 编写。 AI真的太好用了！！！！！
 
 每周自动抓取并生成中国主流运营商、全国 IP 段、Cloudflare 以及**全国 34 个省份/直辖市/特区独立划分**的 RouterOS 地址列表 (`.rsc`) 脚本。
 
@@ -33,7 +33,7 @@
 | **北京** | `output/regions/region_beijing.rsc` | `region_BeiJing` |
 | **上海** | `output/regions/region_shanghai.rsc` | `region_ShangHai` |
 | **广东** | `output/regions/region_guangdong.rsc` | `region_GuangDong` |
-| **江苏** | `output/regions/region_jiangsu.rsc` (根目录亦保留 `output/region_jiangsu.rsc`) | `region_JiangSu` |
+| **江苏** | `output/regions/region_jiangsu.rsc` | `region_JiangSu` |
 | **浙江** | `output/regions/region_zhejiang.rsc` | `region_ZheJiang` |
 | **山东** | `output/regions/region_shandong.rsc` | `region_ShanDong` |
 | **天津** | `output/regions/region_tianjin.rsc` | `region_TianJin` |

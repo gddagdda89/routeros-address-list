@@ -33,11 +33,7 @@ jobs:
 
       - name: Generate Address List RSC Files
         run: |
-          python -m src.address_list_rsc.main
-          python -m src.address_list_rsc.mainv6
-          python -m src.address_list_rsc.china
-          python -m src.address_list_rsc.cloudflare
-          python -m src.address_list_rsc.regions
+          python -m src.address_list_rsc.build_all
 
       - name: Clean up temporary files
         if: always()

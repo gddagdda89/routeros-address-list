@@ -64,41 +64,28 @@ def test_main_rsc_generation_success():
     assert "192.168.0.0/16" in rsc
     assert "100.64.0.0/10" in rsc
 
-def test_jiangsu_threshold_guard(monkeypatch, tmp_path):
-    """验证江苏地址段当条目低于安全门限时触发熔断"""
-    from src.address_list_rsc.jiangsu import generate_jiangsu_rsc
+def test_qqwry_binary_helpers():
+    """验证纯真 IP 数据库底层小端整数读取与位置解析辅助函数"""
+    from src.common.qqwry import read_int3, read_int4
 
-    # Mock parse_jiangsu_records to return only 5 records (less than 1500)
-    monkeypatch.setattr(
-        "src.address_list_rsc.jiangsu.parse_jiangsu_records",
-        lambda buf: [[16777216, 16777471, "南京", "电信"]] * 5
-    )
-    # Mock ensure_qqwry_file to return a dummy file
-    dummy_db = tmp_path / "dummy_qqwry.dat"
-    dummy_db.write_bytes(b"dummy" * 20)
-    monkeypatch.setattr(
-        "src.address_list_rsc.jiangsu.ensure_qqwry_file",
-        lambda path, url: str(dummy_db)
-    )
+    data = b"\x01\x02\x03\x04\x05"
+    assert read_int3(data, 0) == 1 + (2 << 8) + (3 << 16)
+    assert read_int4(data, 0) == 1 + (2 << 8) + (3 << 16) + (4 << 24)
 
-    out_file = tmp_path / "region_jiangsu.rsc"
-    with pytest.raises(DataValidationError) as excinfo:
-        generate_jiangsu_rsc(str(out_file), qqwry_path=str(dummy_db))
-    assert "低于安全门限" in str(excinfo.value)
-
-def test_jiangsu_parsing_real_or_mock():
-    """验证江苏地址段解析器数据结构与字段完整性"""
-    from src.address_list_rsc.jiangsu import parse_jiangsu_records
+def test_regions_parsing_real_or_mock():
+    """验证全国省份地址段解析器数据结构与字段完整性"""
+    from src.address_list_rsc.regions import parse_all_provincial_records
     import os
 
     qqwry_path = "/tmp/qqwry.dat"
     if os.path.exists(qqwry_path) and os.path.getsize(qqwry_path) > 1024 * 1024:
         with open(qqwry_path, "rb") as f:
             buf = f.read()
-        records = parse_jiangsu_records(buf)
-        assert len(records) > 1500
-        # 验证首条数据格式
-        rec = records[0]
+        pools = parse_all_provincial_records(buf)
+        assert "江苏" in pools
+        assert len(pools["江苏"]) > 1500
+        # 验证首条数据格式 [ip_b, ip_e, city, isp]
+        rec = pools["江苏"][0]
         assert len(rec) == 4
         assert isinstance(rec[0], int)
         assert isinstance(rec[1], int)
