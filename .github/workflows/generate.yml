@@ -52,5 +52,6 @@ jobs:
             echo "地址列表产物无任何变动，跳过提交。"
           else
             git commit -m "chore(auto): 定期自动更新 RouterOS 地址列表产物 [skip ci]"
+            git pull --rebase origin main
             git push
           fi
