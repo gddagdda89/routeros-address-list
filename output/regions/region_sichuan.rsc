@@ -804,7 +804,9 @@
 :do { add address=117.176.244.0-117.176.244.255 list=region_SiChuan comment="四川 甘孜藏族自治州 移动" } on-error={}
 :do { add address=117.176.245.0-117.177.60.255 list=region_SiChuan comment="四川 未知 移动" } on-error={}
 :do { add address=117.177.61.0-117.177.62.255 list=region_SiChuan comment="四川 成都 移动" } on-error={}
-:do { add address=117.177.63.0-117.177.191.255 list=region_SiChuan comment="四川 未知 移动" } on-error={}
+:do { add address=117.177.63.0-117.177.146.255 list=region_SiChuan comment="四川 未知 移动" } on-error={}
+:do { add address=117.177.147.0-117.177.152.255 list=region_SiChuan comment="四川 广元 移动" } on-error={}
+:do { add address=117.177.153.0-117.177.191.255 list=region_SiChuan comment="四川 未知 移动" } on-error={}
 :do { add address=117.177.192.0-117.177.207.255 list=region_SiChuan comment="四川 宜宾 移动" } on-error={}
 :do { add address=117.177.208.0-117.177.208.255 list=region_SiChuan comment="四川 泸州 移动" } on-error={}
 :do { add address=117.177.209.0-117.177.251.255 list=region_SiChuan comment="四川 未知 移动" } on-error={}

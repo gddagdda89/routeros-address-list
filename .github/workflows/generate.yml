@@ -6,6 +6,9 @@ on:
     - cron: '0 20 * * 6'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build-and-sync:
     runs-on: ubuntu-latest

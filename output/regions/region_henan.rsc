@@ -67,7 +67,9 @@
 :do { add address=1.197.208.0-1.197.223.255 list=region_HeNan comment="河南 安阳 电信" } on-error={}
 :do { add address=1.197.224.0-1.197.239.255 list=region_HeNan comment="河南 周口 电信" } on-error={}
 :do { add address=1.197.240.0-1.197.255.255 list=region_HeNan comment="河南 漯河 电信" } on-error={}
-:do { add address=1.198.0.0-1.198.164.255 list=region_HeNan comment="河南 郑州 电信" } on-error={}
+:do { add address=1.198.0.0-1.198.153.255 list=region_HeNan comment="河南 郑州 电信" } on-error={}
+:do { add address=1.198.154.0-1.198.154.255 list=region_HeNan comment="河南 驻马店 电信" } on-error={}
+:do { add address=1.198.155.0-1.198.164.255 list=region_HeNan comment="河南 郑州 电信" } on-error={}
 :do { add address=1.198.165.0-1.198.165.255 list=region_HeNan comment="河南 商丘 电信" } on-error={}
 :do { add address=1.198.166.0-1.198.223.255 list=region_HeNan comment="河南 郑州 电信" } on-error={}
 :do { add address=1.198.224.0-1.198.225.255 list=region_HeNan comment="河南 新乡 电信" } on-error={}

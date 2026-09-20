@@ -3528,6 +3528,7 @@
 :do { add address=136.23.34.64-136.23.34.95 list=region_TaiWan comment="台湾 未知 未知" } on-error={}
 :do { add address=136.23.35.32-136.23.35.47 list=region_TaiWan comment="台湾 未知 未知" } on-error={}
 :do { add address=136.23.50.64-136.23.50.127 list=region_TaiWan comment="台湾 未知 未知" } on-error={}
+:do { add address=136.176.200.0-136.176.200.255 list=region_TaiWan comment="台湾 台北市 未知" } on-error={}
 :do { add address=136.226.240.0-136.226.241.255 list=region_TaiWan comment="台湾 台北市 未知" } on-error={}
 :do { add address=137.31.6.0-137.31.6.255 list=region_TaiWan comment="台湾 台北市 未知" } on-error={}
 :do { add address=137.59.208.0-137.59.211.255 list=region_TaiWan comment="台湾 台北市 未知" } on-error={}
@@ -3685,7 +3686,6 @@
 :do { add address=140.136.0.0-140.136.255.255 list=region_TaiWan comment="台湾 新北市 教育网" } on-error={}
 :do { add address=140.137.0.0-140.137.255.255 list=region_TaiWan comment="台湾 台北市 教育网" } on-error={}
 :do { add address=140.138.0.0-140.138.255.255 list=region_TaiWan comment="台湾 桃园市 教育网" } on-error={}
-:do { add address=140.174.96.0-140.174.99.255 list=region_TaiWan comment="台湾 台北市 未知" } on-error={}
 :do { add address=140.235.38.0-140.235.39.255 list=region_TaiWan comment="台湾 台北市 未知" } on-error={}
 :do { add address=141.11.42.0-141.11.42.255 list=region_TaiWan comment="台湾 台北市 未知" } on-error={}
 :do { add address=141.11.86.0-141.11.87.255 list=region_TaiWan comment="台湾 台北市 未知" } on-error={}
