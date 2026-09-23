@@ -1391,7 +1391,6 @@
 :do { add address=2406:840:710::/48 list=all_cn_ipv6 } on-error={}
 :do { add address=2406:840:800::/46 list=all_cn_ipv6 } on-error={}
 :do { add address=2406:840:806::/48 list=all_cn_ipv6 } on-error={}
-:do { add address=2406:840:841::/48 list=all_cn_ipv6 } on-error={}
 :do { add address=2406:840:842::/48 list=all_cn_ipv6 } on-error={}
 :do { add address=2406:840:860::/48 list=all_cn_ipv6 } on-error={}
 :do { add address=2406:840:880::/46 list=all_cn_ipv6 } on-error={}
@@ -1418,7 +1417,7 @@
 :do { add address=2406:840:5880::/47 list=all_cn_ipv6 } on-error={}
 :do { add address=2406:840:5c00::/47 list=all_cn_ipv6 } on-error={}
 :do { add address=2406:840:8100::/40 list=all_cn_ipv6 } on-error={}
-:do { add address=2406:840:9110::/48 list=all_cn_ipv6 } on-error={}
+:do { add address=2406:840:9110::/47 list=all_cn_ipv6 } on-error={}
 :do { add address=2406:840:9178::/48 list=all_cn_ipv6 } on-error={}
 :do { add address=2406:840:9200::/40 list=all_cn_ipv6 } on-error={}
 :do { add address=2406:840:9700::/40 list=all_cn_ipv6 } on-error={}
@@ -2127,9 +2126,7 @@
 :do { add address=2409:27fc::/48 list=all_cn_ipv6 } on-error={}
 :do { add address=2409:27fe::/33 list=all_cn_ipv6 } on-error={}
 :do { add address=2409:8000::/20 list=all_cn_ipv6 } on-error={}
-:do { add address=240a:2000::/40 list=all_cn_ipv6 } on-error={}
-:do { add address=240a:2001:100::/40 list=all_cn_ipv6 } on-error={}
-:do { add address=240a:2001:1000::/36 list=all_cn_ipv6 } on-error={}
+:do { add address=240a:2000::/24 list=all_cn_ipv6 } on-error={}
 :do { add address=240a:4002:1b00::/40 list=all_cn_ipv6 } on-error={}
 :do { add address=240a:4010:8000::/33 list=all_cn_ipv6 } on-error={}
 :do { add address=240a:4020:83a::/48 list=all_cn_ipv6 } on-error={}
@@ -2257,6 +2254,7 @@
 :do { add address=2602:f9f6:402::/48 list=all_cn_ipv6 } on-error={}
 :do { add address=2602:f9f6:450::/48 list=all_cn_ipv6 } on-error={}
 :do { add address=2602:fa02:36::/48 list=all_cn_ipv6 } on-error={}
+:do { add address=2602:fa02:58::/48 list=all_cn_ipv6 } on-error={}
 :do { add address=2602:fa02:d00::/40 list=all_cn_ipv6 } on-error={}
 :do { add address=2602:faa8:702::/48 list=all_cn_ipv6 } on-error={}
 :do { add address=2602:faa8:708::/47 list=all_cn_ipv6 } on-error={}
@@ -2278,7 +2276,7 @@
 :do { add address=2605:9d80:9042::/48 list=all_cn_ipv6 } on-error={}
 :do { add address=2605:9d80:9071::/48 list=all_cn_ipv6 } on-error={}
 :do { add address=2605:9d80:9092::/48 list=all_cn_ipv6 } on-error={}
-:do { add address=2620:57:4004::/48 list=all_cn_ipv6 } on-error={}
+:do { add address=2620:57:4004::/47 list=all_cn_ipv6 } on-error={}
 :do { add address=2804:1e48:9002::/48 list=all_cn_ipv6 } on-error={}
 :do { add address=2a04:3e00:1002::/48 list=all_cn_ipv6 } on-error={}
 :do { add address=2a04:f580:8010::/47 list=all_cn_ipv6 } on-error={}
@@ -2372,7 +2370,7 @@
 :do { add address=2a0f:1cc5:6a0::/47 list=all_cn_ipv6 } on-error={}
 :do { add address=2a0f:1cc5:f00::/46 list=all_cn_ipv6 } on-error={}
 :do { add address=2a0f:1cc5:f05::/48 list=all_cn_ipv6 } on-error={}
-:do { add address=2a0f:1cc5:f06::/47 list=all_cn_ipv6 } on-error={}
+:do { add address=2a0f:1cc5:f06::/48 list=all_cn_ipv6 } on-error={}
 :do { add address=2a0f:1cc5:f08::/47 list=all_cn_ipv6 } on-error={}
 :do { add address=2a0f:1cc5:f10::/48 list=all_cn_ipv6 } on-error={}
 :do { add address=2a0f:1cc5:fff::/48 list=all_cn_ipv6 } on-error={}
@@ -2387,10 +2385,12 @@
 :do { add address=2a0f:1cc5:3203::/48 list=all_cn_ipv6 } on-error={}
 :do { add address=2a0f:1cc5:3222::/48 list=all_cn_ipv6 } on-error={}
 :do { add address=2a0f:1cc5:3700::/43 list=all_cn_ipv6 } on-error={}
+:do { add address=2a0f:1cc5:3720::/48 list=all_cn_ipv6 } on-error={}
 :do { add address=2a0f:1cc5:4300::/40 list=all_cn_ipv6 } on-error={}
 :do { add address=2a0f:1cc5:4400::/40 list=all_cn_ipv6 } on-error={}
 :do { add address=2a0f:1cc5:4508::/45 list=all_cn_ipv6 } on-error={}
 :do { add address=2a0f:1cc5:4510::/44 list=all_cn_ipv6 } on-error={}
+:do { add address=2a0f:1cc5:4560::/44 list=all_cn_ipv6 } on-error={}
 :do { add address=2a0f:1cc5:45ff::/48 list=all_cn_ipv6 } on-error={}
 :do { add address=2a0f:1cc5:4600::/39 list=all_cn_ipv6 } on-error={}
 :do { add address=2a0f:1cc5:49f0::/48 list=all_cn_ipv6 } on-error={}
@@ -2403,7 +2403,6 @@
 :do { add address=2a0f:2380::/29 list=all_cn_ipv6 } on-error={}
 :do { add address=2a0f:2706::/32 list=all_cn_ipv6 } on-error={}
 :do { add address=2a0f:4680::/29 list=all_cn_ipv6 } on-error={}
-:do { add address=2a0f:5580::/29 list=all_cn_ipv6 } on-error={}
 :do { add address=2a0f:6280:1400::/43 list=all_cn_ipv6 } on-error={}
 :do { add address=2a0f:6280:1440::/42 list=all_cn_ipv6 } on-error={}
 :do { add address=2a0f:6280:1480::/44 list=all_cn_ipv6 } on-error={}
@@ -2415,11 +2414,10 @@
 :do { add address=2a0f:6284:4c80::/43 list=all_cn_ipv6 } on-error={}
 :do { add address=2a0f:6284:4ca0::/44 list=all_cn_ipv6 } on-error={}
 :do { add address=2a0f:6284:4cc0::/43 list=all_cn_ipv6 } on-error={}
+:do { add address=2a0f:7106::/31 list=all_cn_ipv6 } on-error={}
 :do { add address=2a0f:7300::/29 list=all_cn_ipv6 } on-error={}
 :do { add address=2a0f:85c1:bfe::/48 list=all_cn_ipv6 } on-error={}
 :do { add address=2a0f:9400:6110::/48 list=all_cn_ipv6 } on-error={}
-:do { add address=2a0f:9fc0::/29 list=all_cn_ipv6 } on-error={}
-:do { add address=2a0f:a140::/29 list=all_cn_ipv6 } on-error={}
 :do { add address=2a0f:a700::/29 list=all_cn_ipv6 } on-error={}
 :do { add address=2a10:ccc0:cc1::/48 list=all_cn_ipv6 } on-error={}
 :do { add address=2a10:ccc0:cc2::/48 list=all_cn_ipv6 } on-error={}
@@ -2427,7 +2425,8 @@
 :do { add address=2a10:fa81:d00::/40 list=all_cn_ipv6 } on-error={}
 :do { add address=2a10:fa86::/34 list=all_cn_ipv6 } on-error={}
 :do { add address=2a10:fa86:c000::/34 list=all_cn_ipv6 } on-error={}
-:do { add address=2a12:3fc6::/46 list=all_cn_ipv6 } on-error={}
+:do { add address=2a12:3fc6::/47 list=all_cn_ipv6 } on-error={}
+:do { add address=2a12:3fc6:3::/48 list=all_cn_ipv6 } on-error={}
 :do { add address=2a12:cb40:1::/48 list=all_cn_ipv6 } on-error={}
 :do { add address=2a12:cb40:2::/48 list=all_cn_ipv6 } on-error={}
 :do { add address=2a12:cb41:600::/44 list=all_cn_ipv6 } on-error={}
@@ -2449,8 +2448,6 @@
 :do { add address=2a13:b487:1200::/42 list=all_cn_ipv6 } on-error={}
 :do { add address=2a13:c8c3:e803::/48 list=all_cn_ipv6 } on-error={}
 :do { add address=2a13:e5c0:ee02::/48 list=all_cn_ipv6 } on-error={}
-:do { add address=2a14:4380::/29 list=all_cn_ipv6 } on-error={}
-:do { add address=2a14:4980::/29 list=all_cn_ipv6 } on-error={}
 :do { add address=2a14:5f00::/29 list=all_cn_ipv6 } on-error={}
 :do { add address=2a14:67c1:b500::/40 list=all_cn_ipv6 } on-error={}
 :do { add address=2a14:67c2:520::/48 list=all_cn_ipv6 } on-error={}
@@ -2922,7 +2919,6 @@
 :do { add address=2406:840:710::/48 list=othernet_ipv6 } on-error={}
 :do { add address=2406:840:800::/46 list=othernet_ipv6 } on-error={}
 :do { add address=2406:840:806::/48 list=othernet_ipv6 } on-error={}
-:do { add address=2406:840:841::/48 list=othernet_ipv6 } on-error={}
 :do { add address=2406:840:842::/48 list=othernet_ipv6 } on-error={}
 :do { add address=2406:840:860::/48 list=othernet_ipv6 } on-error={}
 :do { add address=2406:840:880::/46 list=othernet_ipv6 } on-error={}
@@ -2949,7 +2945,7 @@
 :do { add address=2406:840:5880::/47 list=othernet_ipv6 } on-error={}
 :do { add address=2406:840:5c00::/47 list=othernet_ipv6 } on-error={}
 :do { add address=2406:840:8100::/40 list=othernet_ipv6 } on-error={}
-:do { add address=2406:840:9110::/48 list=othernet_ipv6 } on-error={}
+:do { add address=2406:840:9110::/47 list=othernet_ipv6 } on-error={}
 :do { add address=2406:840:9178::/48 list=othernet_ipv6 } on-error={}
 :do { add address=2406:840:9200::/40 list=othernet_ipv6 } on-error={}
 :do { add address=2406:840:9700::/40 list=othernet_ipv6 } on-error={}
@@ -3098,9 +3094,7 @@
 :do { add address=2409:2003::/47 list=othernet_ipv6 } on-error={}
 :do { add address=2409:27fc::/48 list=othernet_ipv6 } on-error={}
 :do { add address=2409:27fe::/33 list=othernet_ipv6 } on-error={}
-:do { add address=240a:2000::/40 list=othernet_ipv6 } on-error={}
-:do { add address=240a:2001:100::/40 list=othernet_ipv6 } on-error={}
-:do { add address=240a:2001:1000::/36 list=othernet_ipv6 } on-error={}
+:do { add address=240a:2000::/24 list=othernet_ipv6 } on-error={}
 :do { add address=240a:4002:1b00::/40 list=othernet_ipv6 } on-error={}
 :do { add address=240a:4080:8000::/35 list=othernet_ipv6 } on-error={}
 :do { add address=240a:4090:8000::/35 list=othernet_ipv6 } on-error={}
@@ -3146,6 +3140,7 @@
 :do { add address=2602:f9f6:402::/48 list=othernet_ipv6 } on-error={}
 :do { add address=2602:f9f6:450::/48 list=othernet_ipv6 } on-error={}
 :do { add address=2602:fa02:36::/48 list=othernet_ipv6 } on-error={}
+:do { add address=2602:fa02:58::/48 list=othernet_ipv6 } on-error={}
 :do { add address=2602:fa02:d00::/40 list=othernet_ipv6 } on-error={}
 :do { add address=2602:faa8:702::/48 list=othernet_ipv6 } on-error={}
 :do { add address=2602:faa8:708::/47 list=othernet_ipv6 } on-error={}
@@ -3154,7 +3149,7 @@
 :do { add address=2602:fbda:610::/48 list=othernet_ipv6 } on-error={}
 :do { add address=2602:fbda:620::/48 list=othernet_ipv6 } on-error={}
 :do { add address=2602:fbda:660::/44 list=othernet_ipv6 } on-error={}
-:do { add address=2620:57:4004::/48 list=othernet_ipv6 } on-error={}
+:do { add address=2620:57:4004::/47 list=othernet_ipv6 } on-error={}
 :do { add address=2a04:3e00:1002::/48 list=othernet_ipv6 } on-error={}
 :do { add address=2a05:1085::/32 list=othernet_ipv6 } on-error={}
 :do { add address=2a05:1086::/31 list=othernet_ipv6 } on-error={}
@@ -3223,7 +3218,7 @@
 :do { add address=2a0f:1cc5:6a0::/47 list=othernet_ipv6 } on-error={}
 :do { add address=2a0f:1cc5:f00::/46 list=othernet_ipv6 } on-error={}
 :do { add address=2a0f:1cc5:f05::/48 list=othernet_ipv6 } on-error={}
-:do { add address=2a0f:1cc5:f06::/47 list=othernet_ipv6 } on-error={}
+:do { add address=2a0f:1cc5:f06::/48 list=othernet_ipv6 } on-error={}
 :do { add address=2a0f:1cc5:f08::/47 list=othernet_ipv6 } on-error={}
 :do { add address=2a0f:1cc5:f10::/48 list=othernet_ipv6 } on-error={}
 :do { add address=2a0f:1cc5:fff::/48 list=othernet_ipv6 } on-error={}
@@ -3238,10 +3233,12 @@
 :do { add address=2a0f:1cc5:3203::/48 list=othernet_ipv6 } on-error={}
 :do { add address=2a0f:1cc5:3222::/48 list=othernet_ipv6 } on-error={}
 :do { add address=2a0f:1cc5:3700::/43 list=othernet_ipv6 } on-error={}
+:do { add address=2a0f:1cc5:3720::/48 list=othernet_ipv6 } on-error={}
 :do { add address=2a0f:1cc5:4300::/40 list=othernet_ipv6 } on-error={}
 :do { add address=2a0f:1cc5:4400::/40 list=othernet_ipv6 } on-error={}
 :do { add address=2a0f:1cc5:4508::/45 list=othernet_ipv6 } on-error={}
 :do { add address=2a0f:1cc5:4510::/44 list=othernet_ipv6 } on-error={}
+:do { add address=2a0f:1cc5:4560::/44 list=othernet_ipv6 } on-error={}
 :do { add address=2a0f:1cc5:45ff::/48 list=othernet_ipv6 } on-error={}
 :do { add address=2a0f:1cc5:4600::/39 list=othernet_ipv6 } on-error={}
 :do { add address=2a0f:1cc5:49f0::/48 list=othernet_ipv6 } on-error={}
@@ -3254,7 +3251,6 @@
 :do { add address=2a0f:2380::/29 list=othernet_ipv6 } on-error={}
 :do { add address=2a0f:2706::/32 list=othernet_ipv6 } on-error={}
 :do { add address=2a0f:4680::/29 list=othernet_ipv6 } on-error={}
-:do { add address=2a0f:5580::/29 list=othernet_ipv6 } on-error={}
 :do { add address=2a0f:6280:1400::/43 list=othernet_ipv6 } on-error={}
 :do { add address=2a0f:6280:1440::/42 list=othernet_ipv6 } on-error={}
 :do { add address=2a0f:6280:1480::/44 list=othernet_ipv6 } on-error={}
@@ -3266,11 +3262,10 @@
 :do { add address=2a0f:6284:4c80::/43 list=othernet_ipv6 } on-error={}
 :do { add address=2a0f:6284:4ca0::/44 list=othernet_ipv6 } on-error={}
 :do { add address=2a0f:6284:4cc0::/43 list=othernet_ipv6 } on-error={}
+:do { add address=2a0f:7106::/31 list=othernet_ipv6 } on-error={}
 :do { add address=2a0f:7300::/29 list=othernet_ipv6 } on-error={}
 :do { add address=2a0f:85c1:bfe::/48 list=othernet_ipv6 } on-error={}
 :do { add address=2a0f:9400:6110::/48 list=othernet_ipv6 } on-error={}
-:do { add address=2a0f:9fc0::/29 list=othernet_ipv6 } on-error={}
-:do { add address=2a0f:a140::/29 list=othernet_ipv6 } on-error={}
 :do { add address=2a0f:a700::/29 list=othernet_ipv6 } on-error={}
 :do { add address=2a10:ccc0:cc1::/48 list=othernet_ipv6 } on-error={}
 :do { add address=2a10:ccc0:cc2::/48 list=othernet_ipv6 } on-error={}
@@ -3278,7 +3273,8 @@
 :do { add address=2a10:fa81:d00::/40 list=othernet_ipv6 } on-error={}
 :do { add address=2a10:fa86::/34 list=othernet_ipv6 } on-error={}
 :do { add address=2a10:fa86:c000::/34 list=othernet_ipv6 } on-error={}
-:do { add address=2a12:3fc6::/46 list=othernet_ipv6 } on-error={}
+:do { add address=2a12:3fc6::/47 list=othernet_ipv6 } on-error={}
+:do { add address=2a12:3fc6:3::/48 list=othernet_ipv6 } on-error={}
 :do { add address=2a12:cb40:1::/48 list=othernet_ipv6 } on-error={}
 :do { add address=2a12:cb40:2::/48 list=othernet_ipv6 } on-error={}
 :do { add address=2a12:cb41:600::/44 list=othernet_ipv6 } on-error={}
@@ -3300,8 +3296,6 @@
 :do { add address=2a13:b487:1200::/42 list=othernet_ipv6 } on-error={}
 :do { add address=2a13:c8c3:e803::/48 list=othernet_ipv6 } on-error={}
 :do { add address=2a13:e5c0:ee02::/48 list=othernet_ipv6 } on-error={}
-:do { add address=2a14:4380::/29 list=othernet_ipv6 } on-error={}
-:do { add address=2a14:4980::/29 list=othernet_ipv6 } on-error={}
 :do { add address=2a14:5f00::/29 list=othernet_ipv6 } on-error={}
 :do { add address=2a14:67c1:b500::/40 list=othernet_ipv6 } on-error={}
 :do { add address=2a14:67c2:520::/48 list=othernet_ipv6 } on-error={}
