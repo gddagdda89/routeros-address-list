@@ -24,6 +24,7 @@
 :do { add address=62.197.154.0-62.197.154.255 list=region_Macau comment="澳门 未知 未知" } on-error={}
 :do { add address=89.213.239.0-89.213.239.255 list=region_Macau comment="澳门 未知 未知" } on-error={}
 :do { add address=96.7.112.0-96.7.127.255 list=region_Macau comment="澳门 未知 未知" } on-error={}
+:do { add address=98.159.46.96-98.159.46.111 list=region_Macau comment="澳门 未知 未知" } on-error={}
 :do { add address=103.96.60.0-103.96.63.255 list=region_Macau comment="澳门 未知 未知" } on-error={}
 :do { add address=103.115.142.0-103.115.143.255 list=region_Macau comment="澳门 未知 未知" } on-error={}
 :do { add address=103.143.92.0-103.143.92.255 list=region_Macau comment="澳门 澳门半岛 未知" } on-error={}
@@ -51,6 +52,7 @@
 :do { add address=164.137.181.0-164.137.181.255 list=region_Macau comment="澳门 未知 未知" } on-error={}
 :do { add address=172.69.72.0-172.69.75.255 list=region_Macau comment="澳门 未知 未知" } on-error={}
 :do { add address=173.223.44.0-173.223.47.255 list=region_Macau comment="澳门 未知 未知" } on-error={}
+:do { add address=173.239.196.96-173.239.196.111 list=region_Macau comment="澳门 未知 未知" } on-error={}
 :do { add address=178.253.32.0-178.253.32.255 list=region_Macau comment="澳门 未知 未知" } on-error={}
 :do { add address=180.94.128.0-180.94.191.255 list=region_Macau comment="澳门 未知 未知" } on-error={}
 :do { add address=182.93.0.0-182.93.63.255 list=region_Macau comment="澳门 未知 未知" } on-error={}

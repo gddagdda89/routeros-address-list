@@ -1007,7 +1007,9 @@
 :do { add address=119.6.147.0-119.6.147.255 list=region_SiChuan comment="四川 遂宁 联通" } on-error={}
 :do { add address=119.6.148.0-119.6.184.255 list=region_SiChuan comment="四川 绵阳 联通" } on-error={}
 :do { add address=119.6.185.0-119.6.185.255 list=region_SiChuan comment="四川 成都 联通" } on-error={}
-:do { add address=119.6.186.0-119.6.207.255 list=region_SiChuan comment="四川 绵阳 联通" } on-error={}
+:do { add address=119.6.186.0-119.6.201.255 list=region_SiChuan comment="四川 绵阳 联通" } on-error={}
+:do { add address=119.6.202.0-119.6.202.255 list=region_SiChuan comment="四川 成都 联通" } on-error={}
+:do { add address=119.6.203.0-119.6.207.255 list=region_SiChuan comment="四川 绵阳 联通" } on-error={}
 :do { add address=119.6.208.0-119.6.220.255 list=region_SiChuan comment="四川 成都 联通" } on-error={}
 :do { add address=119.6.221.0-119.6.230.255 list=region_SiChuan comment="四川 绵阳 联通" } on-error={}
 :do { add address=119.6.231.0-119.6.233.255 list=region_SiChuan comment="四川 成都 联通" } on-error={}

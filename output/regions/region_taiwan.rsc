@@ -4019,6 +4019,7 @@
 :do { add address=173.82.227.0-173.82.227.255 list=region_TaiWan comment="台湾 台北市 未知" } on-error={}
 :do { add address=173.194.93.0-173.194.93.255 list=region_TaiWan comment="台湾 台北市 未知" } on-error={}
 :do { add address=173.194.171.0-173.194.171.255 list=region_TaiWan comment="台湾 台北市 未知" } on-error={}
+:do { add address=173.244.40.0-173.244.40.255 list=region_TaiWan comment="台湾 台北市 未知" } on-error={}
 :do { add address=173.244.49.0-173.244.49.255 list=region_TaiWan comment="台湾 台北市 未知" } on-error={}
 :do { add address=175.41.16.0-175.41.20.255 list=region_TaiWan comment="台湾 未知 未知" } on-error={}
 :do { add address=175.41.29.0-175.41.31.255 list=region_TaiWan comment="台湾 未知 未知" } on-error={}

@@ -669,6 +669,9 @@
 :do { add address=61.237.127.253 list=region_ShangHai comment="上海 未知 铁通" } on-error={}
 :do { add address=63.246.46.64-63.246.46.127 list=region_ShangHai comment="上海 未知 未知" } on-error={}
 :do { add address=81.68.0.0-81.69.255.255 list=region_ShangHai comment="上海 未知 未知" } on-error={}
+:do { add address=96.45.38.79 list=region_ShangHai comment="上海 未知 未知" } on-error={}
+:do { add address=96.45.44.185 list=region_ShangHai comment="上海 未知 未知" } on-error={}
+:do { add address=96.45.44.200 list=region_ShangHai comment="上海 未知 未知" } on-error={}
 :do { add address=101.34.0.0-101.35.255.255 list=region_ShangHai comment="上海 未知 未知" } on-error={}
 :do { add address=101.43.0.0-101.43.127.255 list=region_ShangHai comment="上海 未知 未知" } on-error={}
 :do { add address=101.45.0.0-101.45.89.255 list=region_ShangHai comment="上海 未知 鹏博士" } on-error={}

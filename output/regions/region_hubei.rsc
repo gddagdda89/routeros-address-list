@@ -592,7 +592,9 @@
 :do { add address=111.4.98.0-111.4.99.255 list=region_HuBei comment="湖北 黄冈 移动" } on-error={}
 :do { add address=111.4.100.0-111.4.118.255 list=region_HuBei comment="湖北 未知 移动" } on-error={}
 :do { add address=111.4.119.0-111.4.255.255 list=region_HuBei comment="湖北 武汉 移动" } on-error={}
-:do { add address=111.46.0.0-111.47.25.43 list=region_HuBei comment="湖北 未知 移动" } on-error={}
+:do { add address=111.46.0.0-111.46.193.255 list=region_HuBei comment="湖北 未知 移动" } on-error={}
+:do { add address=111.46.194.0-111.46.198.255 list=region_HuBei comment="湖北 咸宁 移动" } on-error={}
+:do { add address=111.46.199.0-111.47.25.43 list=region_HuBei comment="湖北 未知 移动" } on-error={}
 :do { add address=111.47.25.44 list=region_HuBei comment="湖北 武汉 移动" } on-error={}
 :do { add address=111.47.25.45-111.48.138.255 list=region_HuBei comment="湖北 未知 移动" } on-error={}
 :do { add address=111.48.139.0-111.48.140.255 list=region_HuBei comment="湖北 武汉 移动" } on-error={}
@@ -921,7 +923,9 @@
 :do { add address=120.202.127.0-120.202.127.255 list=region_HuBei comment="湖北 孝感 移动" } on-error={}
 :do { add address=120.202.128.0-120.202.170.255 list=region_HuBei comment="湖北 未知 移动" } on-error={}
 :do { add address=120.202.171.0-120.202.171.255 list=region_HuBei comment="湖北 武汉 移动" } on-error={}
-:do { add address=120.202.172.0-120.202.248.255 list=region_HuBei comment="湖北 未知 移动" } on-error={}
+:do { add address=120.202.172.0-120.202.236.255 list=region_HuBei comment="湖北 未知 移动" } on-error={}
+:do { add address=120.202.237.0-120.202.237.255 list=region_HuBei comment="湖北 荆门 移动" } on-error={}
+:do { add address=120.202.238.0-120.202.248.255 list=region_HuBei comment="湖北 未知 移动" } on-error={}
 :do { add address=120.202.249.0-120.202.250.255 list=region_HuBei comment="湖北 武汉 移动" } on-error={}
 :do { add address=120.202.251.0-120.202.255.255 list=region_HuBei comment="湖北 未知 移动" } on-error={}
 :do { add address=121.60.0.0-121.60.255.255 list=region_HuBei comment="湖北 武汉 电信" } on-error={}

@@ -713,7 +713,8 @@
 :do { add address=58.254.16.0-58.254.31.255 list=region_GuangDong comment="广东 河源 联通" } on-error={}
 :do { add address=58.254.32.0-58.254.38.255 list=region_GuangDong comment="广东 清远 联通" } on-error={}
 :do { add address=58.254.39.0-58.254.39.255 list=region_GuangDong comment="广东 珠海 联通" } on-error={}
-:do { add address=58.254.40.0-58.254.47.255 list=region_GuangDong comment="广东 云浮 联通" } on-error={}
+:do { add address=58.254.40.0-58.254.40.255 list=region_GuangDong comment="广东 清远 联通" } on-error={}
+:do { add address=58.254.41.0-58.254.47.255 list=region_GuangDong comment="广东 云浮 联通" } on-error={}
 :do { add address=58.254.48.0-58.254.61.255 list=region_GuangDong comment="广东 肇庆 联通" } on-error={}
 :do { add address=58.254.62.0-58.254.62.255 list=region_GuangDong comment="广东 深圳 联通" } on-error={}
 :do { add address=58.254.63.0-58.254.63.255 list=region_GuangDong comment="广东 肇庆 联通" } on-error={}
