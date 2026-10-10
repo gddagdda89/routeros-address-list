@@ -101,7 +101,8 @@
 :do { add address=40.73.148.32-40.73.148.127 list=region_ShangHai comment="上海 未知 未知" } on-error={}
 :do { add address=40.73.148.192-40.73.150.31 list=region_ShangHai comment="上海 未知 未知" } on-error={}
 :do { add address=40.73.150.96-40.73.155.255 list=region_ShangHai comment="上海 未知 未知" } on-error={}
-:do { add address=40.73.160.0-40.73.175.255 list=region_ShangHai comment="上海 未知 未知" } on-error={}
+:do { add address=40.73.160.0-40.73.160.159 list=region_ShangHai comment="上海 未知 未知" } on-error={}
+:do { add address=40.73.160.192-40.73.175.255 list=region_ShangHai comment="上海 未知 未知" } on-error={}
 :do { add address=40.73.192.0-40.73.204.3 list=region_ShangHai comment="上海 未知 未知" } on-error={}
 :do { add address=40.73.204.12-40.73.204.15 list=region_ShangHai comment="上海 未知 未知" } on-error={}
 :do { add address=40.73.204.32-40.73.220.255 list=region_ShangHai comment="上海 未知 未知" } on-error={}

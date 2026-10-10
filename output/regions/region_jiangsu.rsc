@@ -199,6 +199,7 @@
 :do { add address=40.73.146.32-40.73.146.63 list=region_JiangSu comment="江苏 南通 未知" } on-error={}
 :do { add address=40.73.147.0-40.73.147.31 list=region_JiangSu comment="江苏 南通 未知" } on-error={}
 :do { add address=40.73.150.32-40.73.150.63 list=region_JiangSu comment="江苏 南通 未知" } on-error={}
+:do { add address=40.73.160.160-40.73.160.191 list=region_JiangSu comment="江苏 南通 未知" } on-error={}
 :do { add address=40.73.204.28-40.73.204.31 list=region_JiangSu comment="江苏 南通 未知" } on-error={}
 :do { add address=40.73.221.0-40.73.221.255 list=region_JiangSu comment="江苏 南通 未知" } on-error={}
 :do { add address=40.73.231.0-40.73.231.255 list=region_JiangSu comment="江苏 南通 未知" } on-error={}

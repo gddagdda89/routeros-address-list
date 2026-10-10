@@ -139,6 +139,7 @@
 :do { add address=39.144.86.0-39.144.86.255 list=region_HeBei comment="河北 沧州 移动" } on-error={}
 :do { add address=39.144.87.0-39.144.87.255 list=region_HeBei comment="河北 廊坊 移动" } on-error={}
 :do { add address=39.144.88.0-39.144.89.255 list=region_HeBei comment="河北 唐山 移动" } on-error={}
+:do { add address=40.72.48.0-40.72.55.255 list=region_HeBei comment="河北 张家口 未知" } on-error={}
 :do { add address=40.72.68.0-40.72.68.255 list=region_HeBei comment="河北 张家口 未知" } on-error={}
 :do { add address=40.72.69.128-40.72.69.191 list=region_HeBei comment="河北 张家口 未知" } on-error={}
 :do { add address=40.72.70.0-40.72.70.127 list=region_HeBei comment="河北 张家口 未知" } on-error={}
@@ -147,6 +148,7 @@
 :do { add address=40.72.124.132-40.72.124.135 list=region_HeBei comment="河北 张家口 未知" } on-error={}
 :do { add address=40.72.124.168-40.72.124.175 list=region_HeBei comment="河北 张家口 未知" } on-error={}
 :do { add address=40.72.125.0-40.72.125.127 list=region_HeBei comment="河北 张家口 未知" } on-error={}
+:do { add address=40.73.128.160-40.73.128.191 list=region_HeBei comment="河北 张家口 未知" } on-error={}
 :do { add address=40.73.129.96-40.73.129.127 list=region_HeBei comment="河北 张家口 未知" } on-error={}
 :do { add address=40.73.145.0-40.73.145.207 list=region_HeBei comment="河北 张家口 未知" } on-error={}
 :do { add address=40.73.145.224-40.73.145.255 list=region_HeBei comment="河北 张家口 未知" } on-error={}

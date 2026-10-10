@@ -438,7 +438,7 @@
 :do { add address=117.136.16.0-117.136.16.255 list=region_YunNan comment="云南 未知 移动" } on-error={}
 :do { add address=117.136.71.0-117.136.71.255 list=region_YunNan comment="云南 未知 移动" } on-error={}
 :do { add address=117.136.72.0-117.136.72.255 list=region_YunNan comment="云南 昆明 移动" } on-error={}
-:do { add address=117.136.73.0-117.136.73.255 list=region_YunNan comment="云南 未知 移动" } on-error={}
+:do { add address=117.136.73.0-117.136.73.255 list=region_YunNan comment="云南 玉溪 移动" } on-error={}
 :do { add address=117.136.80.0-117.136.80.255 list=region_YunNan comment="云南 未知 移动" } on-error={}
 :do { add address=117.136.84.0-117.136.85.255 list=region_YunNan comment="云南 昆明 移动" } on-error={}
 :do { add address=119.62.0.0-119.62.131.255 list=region_YunNan comment="云南 昆明 联通" } on-error={}

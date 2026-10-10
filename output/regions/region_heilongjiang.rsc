@@ -722,7 +722,9 @@
 :do { add address=110.112.160.0-110.112.162.255 list=region_HeiLongJiang comment="黑龙江 未知 铁通" } on-error={}
 :do { add address=110.112.163.0-110.112.217.255 list=region_HeiLongJiang comment="黑龙江 佳木斯 铁通" } on-error={}
 :do { add address=110.112.218.0-110.112.255.255 list=region_HeiLongJiang comment="黑龙江 未知 铁通" } on-error={}
-:do { add address=111.40.0.0-111.41.43.255 list=region_HeiLongJiang comment="黑龙江 未知 移动" } on-error={}
+:do { add address=111.40.0.0-111.40.32.255 list=region_HeiLongJiang comment="黑龙江 未知 移动" } on-error={}
+:do { add address=111.40.33.0-111.40.33.255 list=region_HeiLongJiang comment="黑龙江 哈尔滨 移动" } on-error={}
+:do { add address=111.40.34.0-111.41.43.255 list=region_HeiLongJiang comment="黑龙江 未知 移动" } on-error={}
 :do { add address=111.41.44.0-111.41.44.255 list=region_HeiLongJiang comment="黑龙江 哈尔滨 移动" } on-error={}
 :do { add address=111.41.45.0-111.42.108.255 list=region_HeiLongJiang comment="黑龙江 未知 移动" } on-error={}
 :do { add address=111.42.109.0-111.42.109.255 list=region_HeiLongJiang comment="黑龙江 大兴安岭地区 移动" } on-error={}
