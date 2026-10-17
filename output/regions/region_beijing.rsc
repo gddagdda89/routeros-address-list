@@ -613,12 +613,13 @@
 :do { add address=61.251.99.184-61.251.99.191 list=region_BeiJing comment="北京 未知 未知" } on-error={}
 :do { add address=62.234.0.0-62.234.255.255 list=region_BeiJing comment="北京 未知 未知" } on-error={}
 :do { add address=63.218.252.10 list=region_BeiJing comment="北京 未知 铁通" } on-error={}
-:do { add address=63.249.134.0-63.249.137.255 list=region_BeiJing comment="北京 未知 未知" } on-error={}
+:do { add address=63.249.137.0-63.249.137.255 list=region_BeiJing comment="北京 未知 未知" } on-error={}
 :do { add address=65.55.60.184-65.55.60.187 list=region_BeiJing comment="北京 未知 未知" } on-error={}
 :do { add address=66.119.149.0-66.119.149.255 list=region_BeiJing comment="北京 未知 未知" } on-error={}
 :do { add address=71.131.192.0-71.132.63.255 list=region_BeiJing comment="北京 未知 未知" } on-error={}
 :do { add address=71.136.64.0-71.136.127.255 list=region_BeiJing comment="北京 未知 未知" } on-error={}
 :do { add address=71.137.0.0-71.137.63.255 list=region_BeiJing comment="北京 未知 未知" } on-error={}
+:do { add address=78.105.150.0-78.105.150.255 list=region_BeiJing comment="北京 未知 未知" } on-error={}
 :do { add address=81.70.0.0-81.70.255.255 list=region_BeiJing comment="北京 未知 未知" } on-error={}
 :do { add address=81.71.198.0-81.71.199.255 list=region_BeiJing comment="北京 未知 未知" } on-error={}
 :do { add address=82.156.0.0-82.157.255.255 list=region_BeiJing comment="北京 未知 未知" } on-error={}

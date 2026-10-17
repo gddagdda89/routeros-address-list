@@ -80,6 +80,7 @@
 :do { add address=36.251.128.0-36.251.251.255 list=region_FuJian comment="福建 泉州 联通" } on-error={}
 :do { add address=36.251.252.0-36.251.252.255 list=region_FuJian comment="福建 厦门 联通" } on-error={}
 :do { add address=36.251.253.0-36.251.255.255 list=region_FuJian comment="福建 泉州 联通" } on-error={}
+:do { add address=38.126.72.0-38.126.72.255 list=region_FuJian comment="福建 泉州 未知" } on-error={}
 :do { add address=39.0.0.0-39.0.0.255 list=region_FuJian comment="福建 未知 电信" } on-error={}
 :do { add address=39.0.2.0-39.0.7.255 list=region_FuJian comment="福建 未知 电信" } on-error={}
 :do { add address=39.134.96.0-39.134.96.95 list=region_FuJian comment="福建 福州 移动" } on-error={}

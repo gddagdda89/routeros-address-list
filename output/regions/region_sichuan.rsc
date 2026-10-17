@@ -1534,8 +1534,8 @@
 :do { add address=171.213.176.0-171.213.181.255 list=region_SiChuan comment="四川 乐山 电信" } on-error={}
 :do { add address=171.213.182.0-171.213.185.255 list=region_SiChuan comment="四川 成都 电信" } on-error={}
 :do { add address=171.213.186.0-171.213.186.255 list=region_SiChuan comment="四川 乐山 电信" } on-error={}
-:do { add address=171.213.187.0-171.213.188.255 list=region_SiChuan comment="四川 成都 电信" } on-error={}
-:do { add address=171.213.189.0-171.213.210.255 list=region_SiChuan comment="四川 乐山 电信" } on-error={}
+:do { add address=171.213.187.0-171.213.190.255 list=region_SiChuan comment="四川 成都 电信" } on-error={}
+:do { add address=171.213.191.0-171.213.210.255 list=region_SiChuan comment="四川 乐山 电信" } on-error={}
 :do { add address=171.213.211.0-171.213.211.255 list=region_SiChuan comment="四川 成都 电信" } on-error={}
 :do { add address=171.213.212.0-171.213.255.255 list=region_SiChuan comment="四川 乐山 电信" } on-error={}
 :do { add address=171.214.0.0-171.214.31.255 list=region_SiChuan comment="四川 成都 电信" } on-error={}

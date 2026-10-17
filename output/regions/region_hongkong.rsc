@@ -292,7 +292,6 @@
 :do { add address=23.149.120.0-23.149.120.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=23.150.32.0-23.150.32.255 list=region_HongKong comment="香港 九龙半岛 未知" } on-error={}
 :do { add address=23.162.120.0-23.162.120.255 list=region_HongKong comment="香港 新界 未知" } on-error={}
-:do { add address=23.163.8.0-23.163.8.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=23.175.201.0-23.175.201.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=23.187.40.0-23.187.40.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=23.188.216.0-23.188.216.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
@@ -461,8 +460,6 @@
 :do { add address=38.180.149.0-38.180.150.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=38.180.188.0-38.180.189.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=38.181.0.0-38.181.39.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
-:do { add address=38.181.64.0-38.181.65.255 list=region_HongKong comment="香港 九龙半岛 未知" } on-error={}
-:do { add address=38.181.72.0-38.181.79.255 list=region_HongKong comment="香港 九龙半岛 未知" } on-error={}
 :do { add address=38.182.96.0-38.182.99.255 list=region_HongKong comment="香港 九龙半岛 未知" } on-error={}
 :do { add address=38.182.102.0-38.182.103.255 list=region_HongKong comment="香港 九龙半岛 未知" } on-error={}
 :do { add address=38.182.128.0-38.182.255.255 list=region_HongKong comment="香港 香港岛 未知" } on-error={}
@@ -1120,6 +1117,8 @@
 :do { add address=50.114.156.0-50.114.159.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=50.117.74.0-50.117.75.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=51.5.25.0-51.5.25.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
+:do { add address=51.146.76.0-51.146.77.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
+:do { add address=51.146.79.0-51.146.79.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=52.84.49.0-52.84.49.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=52.85.154.0-52.85.159.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=52.93.35.0-52.93.35.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
@@ -1672,6 +1671,7 @@
 :do { add address=92.112.80.0-92.112.80.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=92.113.79.0-92.113.79.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=92.113.116.0-92.113.117.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
+:do { add address=92.113.192.0-92.113.192.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=92.118.62.0-92.118.62.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=92.118.189.0-92.118.189.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=92.223.76.0-92.223.76.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
@@ -3238,6 +3238,7 @@
 :do { add address=134.122.191.0-134.122.191.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=134.122.204.0-134.122.204.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=134.159.158.0-134.159.162.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
+:do { add address=134.168.4.0-134.168.4.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=134.170.192.0-134.170.199.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=134.170.216.0-134.170.216.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=135.130.221.0-135.130.221.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
@@ -3535,7 +3536,9 @@
 :do { add address=154.18.4.224-154.18.4.231 list=region_HongKong comment="香港 香港岛 未知" } on-error={}
 :do { add address=154.18.4.232-154.18.4.239 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=154.18.4.244-154.18.4.247 list=region_HongKong comment="香港 未知 未知" } on-error={}
+:do { add address=154.18.4.252-154.18.4.253 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=154.18.5.104-154.18.5.111 list=region_HongKong comment="香港 未知 未知" } on-error={}
+:do { add address=154.18.5.136-154.18.5.137 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=154.18.6.0-154.18.6.3 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=154.18.6.6-154.18.6.9 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=154.18.6.12-154.18.6.39 list=region_HongKong comment="香港 未知 未知" } on-error={}
@@ -4077,7 +4080,8 @@
 :do { add address=160.202.56.152-160.202.56.167 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=160.202.56.176-160.202.56.183 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=160.202.57.64-160.202.57.79 list=region_HongKong comment="香港 未知 未知" } on-error={}
-:do { add address=160.202.57.104-160.202.57.199 list=region_HongKong comment="香港 未知 未知" } on-error={}
+:do { add address=160.202.57.104-160.202.57.119 list=region_HongKong comment="香港 未知 未知" } on-error={}
+:do { add address=160.202.57.128-160.202.57.199 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=160.202.57.208-160.202.57.223 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=160.202.63.0-160.202.63.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=160.235.128.0-160.235.191.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
@@ -4227,6 +4231,7 @@
 :do { add address=172.111.186.0-172.111.186.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=172.111.192.0-172.111.193.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=172.111.234.0-172.111.234.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
+:do { add address=172.145.0.0-172.145.127.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=172.216.160.0-172.216.163.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=172.216.189.0-172.216.192.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
 :do { add address=172.216.245.0-172.216.245.255 list=region_HongKong comment="香港 未知 未知" } on-error={}
