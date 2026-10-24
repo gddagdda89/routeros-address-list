@@ -182,7 +182,6 @@
 :do { add address=61.243.116.0-61.243.117.255 list=region_NingXia comment="宁夏 石嘴山 联通" } on-error={}
 :do { add address=61.243.118.0-61.243.118.255 list=region_NingXia comment="宁夏 固原 联通" } on-error={}
 :do { add address=61.243.119.0-61.243.119.255 list=region_NingXia comment="宁夏 石嘴山 联通" } on-error={}
-:do { add address=63.249.210.0-63.249.212.255 list=region_NingXia comment="宁夏 未知 未知" } on-error={}
 :do { add address=68.79.0.0-68.79.63.255 list=region_NingXia comment="宁夏 未知 未知" } on-error={}
 :do { add address=69.230.192.0-69.230.255.255 list=region_NingXia comment="宁夏 未知 未知" } on-error={}
 :do { add address=69.231.128.0-69.231.191.255 list=region_NingXia comment="宁夏 未知 未知" } on-error={}

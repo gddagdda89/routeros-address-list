@@ -755,6 +755,7 @@
 :do { add address=140.243.64.0-140.243.127.255 list=region_FuJian comment="福建 泉州 电信" } on-error={}
 :do { add address=140.243.128.0-140.243.255.255 list=region_FuJian comment="福建 福州 电信" } on-error={}
 :do { add address=150.242.96.0-150.242.99.255 list=region_FuJian comment="福建 福州 电信" } on-error={}
+:do { add address=154.3.74.0-154.3.75.255 list=region_FuJian comment="福建 泉州 未知" } on-error={}
 :do { add address=159.226.150.0-159.226.150.255 list=region_FuJian comment="福建 福州 教育网" } on-error={}
 :do { add address=175.42.0.0-175.42.63.255 list=region_FuJian comment="福建 福州 联通" } on-error={}
 :do { add address=175.42.64.0-175.42.67.255 list=region_FuJian comment="福建 宁德 联通" } on-error={}
