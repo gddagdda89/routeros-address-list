@@ -270,7 +270,7 @@
 :do { add address=111.85.203.0-111.85.237.255 list=region_GuiZhou comment="贵州 未知 联通" } on-error={}
 :do { add address=111.85.238.0-111.85.238.255 list=region_GuiZhou comment="贵州 黔东南苗族侗族自治州 联通" } on-error={}
 :do { add address=111.85.239.0-111.85.255.255 list=region_GuiZhou comment="贵州 未知 联通" } on-error={}
-:do { add address=111.119.64.0-111.119.143.255 list=region_GuiZhou comment="贵州 贵阳 联通" } on-error={}
+:do { add address=111.119.128.0-111.119.143.255 list=region_GuiZhou comment="贵州 贵阳 联通" } on-error={}
 :do { add address=111.119.145.0-111.119.159.255 list=region_GuiZhou comment="贵州 贵阳 联通" } on-error={}
 :do { add address=111.120.0.0-111.120.120.255 list=region_GuiZhou comment="贵州 贵阳 电信" } on-error={}
 :do { add address=111.120.121.0-111.120.121.255 list=region_GuiZhou comment="贵州 六盘水 电信" } on-error={}

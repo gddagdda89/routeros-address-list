@@ -25,7 +25,7 @@
 :do { add address=17.81.78.0-17.81.83.255 list=region_JiangSu comment="江苏 苏州 未知" } on-error={}
 :do { add address=17.81.86.0-17.81.86.255 list=region_JiangSu comment="江苏 苏州 未知" } on-error={}
 :do { add address=17.81.88.0-17.81.88.255 list=region_JiangSu comment="江苏 盐城 未知" } on-error={}
-:do { add address=17.81.89.0-17.81.89.255 list=region_JiangSu comment="江苏 苏州 未知" } on-error={}
+:do { add address=17.81.89.0-17.81.91.255 list=region_JiangSu comment="江苏 苏州 未知" } on-error={}
 :do { add address=17.81.133.0-17.81.133.255 list=region_JiangSu comment="江苏 苏州 未知" } on-error={}
 :do { add address=17.81.135.0-17.81.135.255 list=region_JiangSu comment="江苏 苏州 未知" } on-error={}
 :do { add address=17.81.139.0-17.81.139.255 list=region_JiangSu comment="江苏 南京 未知" } on-error={}
@@ -1244,7 +1244,6 @@
 :do { add address=123.77.172.0-123.77.191.255 list=region_JiangSu comment="江苏 未知 铁通" } on-error={}
 :do { add address=123.77.192.0-123.77.223.255 list=region_JiangSu comment="江苏 苏州 铁通" } on-error={}
 :do { add address=123.77.224.0-123.77.255.255 list=region_JiangSu comment="江苏 未知 铁通" } on-error={}
-:do { add address=124.20.80.0-124.20.80.255 list=region_JiangSu comment="江苏 南京 联通" } on-error={}
 :do { add address=124.205.152.192-124.205.152.255 list=region_JiangSu comment="江苏 无锡 鹏博士" } on-error={}
 :do { add address=129.211.160.0-129.211.249.255 list=region_JiangSu comment="江苏 南京 未知" } on-error={}
 :do { add address=129.211.252.0-129.211.252.255 list=region_JiangSu comment="江苏 南京 未知" } on-error={}

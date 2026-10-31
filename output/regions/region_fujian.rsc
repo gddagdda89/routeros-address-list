@@ -613,7 +613,6 @@
 :do { add address=117.120.220.0-117.120.223.255 list=region_FuJian comment="福建 厦门 广电" } on-error={}
 :do { add address=117.136.11.0-117.136.11.255 list=region_FuJian comment="福建 未知 移动" } on-error={}
 :do { add address=117.136.75.0-117.136.75.255 list=region_FuJian comment="福建 福州 移动" } on-error={}
-:do { add address=119.27.192.0-119.27.255.255 list=region_FuJian comment="福建 厦门 广电" } on-error={}
 :do { add address=119.233.128.0-119.233.255.255 list=region_FuJian comment="福建 厦门 联通" } on-error={}
 :do { add address=120.32.0.0-120.32.127.255 list=region_FuJian comment="福建 福州 电信" } on-error={}
 :do { add address=120.32.128.0-120.32.255.255 list=region_FuJian comment="福建 厦门 电信" } on-error={}

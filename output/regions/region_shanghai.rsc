@@ -80,6 +80,7 @@
 :do { add address=39.144.39.0-39.144.40.255 list=region_ShangHai comment="上海 未知 移动" } on-error={}
 :do { add address=39.144.43.0-39.144.48.255 list=region_ShangHai comment="上海 未知 移动" } on-error={}
 :do { add address=39.144.103.0-39.144.107.255 list=region_ShangHai comment="上海 未知 移动" } on-error={}
+:do { add address=40.72.56.0-40.72.63.255 list=region_ShangHai comment="上海 未知 未知" } on-error={}
 :do { add address=40.72.69.64-40.72.69.127 list=region_ShangHai comment="上海 未知 未知" } on-error={}
 :do { add address=40.72.71.64-40.72.71.255 list=region_ShangHai comment="上海 未知 未知" } on-error={}
 :do { add address=40.72.96.0-40.72.123.255 list=region_ShangHai comment="上海 未知 未知" } on-error={}
@@ -1152,7 +1153,9 @@
 :do { add address=115.172.192.0-115.172.255.255 list=region_ShangHai comment="上海 未知 鹏博士" } on-error={}
 :do { add address=115.173.128.0-115.173.140.255 list=region_ShangHai comment="上海 未知 鹏博士" } on-error={}
 :do { add address=115.173.142.0-115.174.63.255 list=region_ShangHai comment="上海 未知 鹏博士" } on-error={}
-:do { add address=115.174.96.0-115.174.255.255 list=region_ShangHai comment="上海 未知 鹏博士" } on-error={}
+:do { add address=115.174.96.0-115.174.127.255 list=region_ShangHai comment="上海 未知 鹏博士" } on-error={}
+:do { add address=115.174.176.0-115.174.183.255 list=region_ShangHai comment="上海 未知 鹏博士" } on-error={}
+:do { add address=115.174.200.0-115.174.207.255 list=region_ShangHai comment="上海 未知 鹏博士" } on-error={}
 :do { add address=115.175.0.0-115.175.103.255 list=region_ShangHai comment="上海 未知 未知" } on-error={}
 :do { add address=115.175.110.0-115.175.127.255 list=region_ShangHai comment="上海 未知 未知" } on-error={}
 :do { add address=116.58.128.0-116.58.143.255 list=region_ShangHai comment="上海 未知 未知" } on-error={}

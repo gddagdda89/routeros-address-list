@@ -3084,7 +3084,6 @@
 :do { add address=121.201.118.0-121.201.118.255 list=region_GuangDong comment="广东 中山 未知" } on-error={}
 :do { add address=121.201.119.0-121.201.127.255 list=region_GuangDong comment="广东 佛山 未知" } on-error={}
 :do { add address=121.201.128.0-121.201.255.255 list=region_GuangDong comment="广东 广州 未知" } on-error={}
-:do { add address=122.0.128.0-122.0.255.255 list=region_GuangDong comment="广东 未知 电信" } on-error={}
 :do { add address=122.8.32.0-122.8.32.255 list=region_GuangDong comment="广东 广州 未知" } on-error={}
 :do { add address=122.8.33.0-122.8.45.255 list=region_GuangDong comment="广东 未知 未知" } on-error={}
 :do { add address=122.8.46.0-122.8.48.255 list=region_GuangDong comment="广东 江门 未知" } on-error={}
@@ -3287,14 +3286,6 @@
 :do { add address=124.15.184.0-124.15.191.255 list=region_GuangDong comment="广东 广州 鹏博士" } on-error={}
 :do { add address=124.16.0.0-124.16.1.255 list=region_GuangDong comment="广东 广州 鹏博士" } on-error={}
 :do { add address=124.16.4.0-124.16.7.255 list=region_GuangDong comment="广东 广州 鹏博士" } on-error={}
-:do { add address=124.20.112.0-124.20.127.255 list=region_GuangDong comment="广东 佛山 联通" } on-error={}
-:do { add address=124.20.128.0-124.20.175.255 list=region_GuangDong comment="广东 广州 联通" } on-error={}
-:do { add address=124.20.176.0-124.20.223.255 list=region_GuangDong comment="广东 佛山 联通" } on-error={}
-:do { add address=124.20.224.0-124.20.239.255 list=region_GuangDong comment="广东 未知 联通" } on-error={}
-:do { add address=124.20.240.0-124.20.247.255 list=region_GuangDong comment="广东 佛山 联通" } on-error={}
-:do { add address=124.20.248.0-124.20.248.255 list=region_GuangDong comment="广东 未知 联通" } on-error={}
-:do { add address=124.20.249.0-124.20.249.255 list=region_GuangDong comment="广东 江门 联通" } on-error={}
-:do { add address=124.20.250.0-124.20.255.255 list=region_GuangDong comment="广东 未知 联通" } on-error={}
 :do { add address=124.29.0.0-124.29.127.255 list=region_GuangDong comment="广东 广州 未知" } on-error={}
 :do { add address=124.40.128.0-124.40.191.255 list=region_GuangDong comment="广东 广州 未知" } on-error={}
 :do { add address=124.40.192.0-124.40.223.255 list=region_GuangDong comment="广东 未知 电信" } on-error={}
