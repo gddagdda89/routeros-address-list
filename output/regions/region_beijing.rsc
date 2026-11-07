@@ -2294,6 +2294,8 @@
 :do { add address=163.228.178.0-163.228.191.255 list=region_BeiJing comment="北京 未知 未知" } on-error={}
 :do { add address=164.52.52.0-164.52.52.255 list=region_BeiJing comment="北京 未知 未知" } on-error={}
 :do { add address=166.111.0.0-166.111.255.255 list=region_BeiJing comment="北京 未知 教育网" } on-error={}
+:do { add address=167.167.208.0-167.167.208.255 list=region_BeiJing comment="北京 未知 未知" } on-error={}
+:do { add address=167.167.210.0-167.167.210.255 list=region_BeiJing comment="北京 未知 未知" } on-error={}
 :do { add address=168.160.0.0-168.160.227.255 list=region_BeiJing comment="北京 未知 未知" } on-error={}
 :do { add address=168.160.228.0-168.160.229.255 list=region_BeiJing comment="北京 未知 鹏博士" } on-error={}
 :do { add address=168.160.230.0-168.160.235.255 list=region_BeiJing comment="北京 未知 未知" } on-error={}

@@ -2146,6 +2146,8 @@
 :do { add address=163.228.176.0-163.228.177.255 list=region_ShangHai comment="上海 未知 未知" } on-error={}
 :do { add address=163.228.192.0-163.228.223.255 list=region_ShangHai comment="上海 未知 未知" } on-error={}
 :do { add address=167.139.0.0-167.139.255.255 list=region_ShangHai comment="上海 未知 电信" } on-error={}
+:do { add address=167.167.211.0-167.167.211.255 list=region_ShangHai comment="上海 未知 未知" } on-error={}
+:do { add address=167.167.213.0-167.167.213.255 list=region_ShangHai comment="上海 未知 未知" } on-error={}
 :do { add address=167.220.247.0-167.220.247.31 list=region_ShangHai comment="上海 未知 未知" } on-error={}
 :do { add address=172.81.192.0-172.81.255.255 list=region_ShangHai comment="上海 未知 未知" } on-error={}
 :do { add address=173.39.200.0-173.39.201.255 list=region_ShangHai comment="上海 未知 未知" } on-error={}

@@ -3558,6 +3558,7 @@
 :do { add address=163.204.232.0-163.204.232.255 list=region_GuangDong comment="广东 云浮 联通" } on-error={}
 :do { add address=163.204.233.0-163.204.244.255 list=region_GuangDong comment="广东 韶关 联通" } on-error={}
 :do { add address=163.204.245.0-163.204.255.255 list=region_GuangDong comment="广东 汕尾 联通" } on-error={}
+:do { add address=167.167.212.0-167.167.212.255 list=region_GuangDong comment="广东 广州 未知" } on-error={}
 :do { add address=175.27.16.0-175.27.23.255 list=region_GuangDong comment="广东 深圳 未知" } on-error={}
 :do { add address=175.27.32.0-175.27.39.255 list=region_GuangDong comment="广东 广州 未知" } on-error={}
 :do { add address=175.27.56.0-175.27.63.255 list=region_GuangDong comment="广东 深圳 未知" } on-error={}
