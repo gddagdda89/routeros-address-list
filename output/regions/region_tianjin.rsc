@@ -44,6 +44,7 @@
 :do { add address=42.187.255.0-42.187.255.255 list=region_TianJin comment="天津 未知 未知" } on-error={}
 :do { add address=43.137.240.0-43.137.255.255 list=region_TianJin comment="天津 未知 未知" } on-error={}
 :do { add address=43.141.64.0-43.141.95.255 list=region_TianJin comment="天津 未知 未知" } on-error={}
+:do { add address=43.180.112.0-43.180.127.255 list=region_TianJin comment="天津 未知 未知" } on-error={}
 :do { add address=43.180.224.0-43.180.239.255 list=region_TianJin comment="天津 未知 未知" } on-error={}
 :do { add address=43.224.208.0-43.224.211.255 list=region_TianJin comment="天津 未知 联通" } on-error={}
 :do { add address=43.226.120.0-43.226.123.255 list=region_TianJin comment="天津 滨海新区 联通" } on-error={}

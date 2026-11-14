@@ -2823,7 +2823,9 @@
 :do { add address=223.85.61.0-223.85.63.255 list=region_SiChuan comment="四川 凉山彝族自治州 移动" } on-error={}
 :do { add address=223.85.64.0-223.85.79.255 list=region_SiChuan comment="四川 巴中 移动" } on-error={}
 :do { add address=223.85.80.0-223.85.95.255 list=region_SiChuan comment="四川 甘孜藏族自治州 移动" } on-error={}
-:do { add address=223.85.96.0-223.85.111.255 list=region_SiChuan comment="四川 绵阳 移动" } on-error={}
+:do { add address=223.85.96.0-223.85.98.191 list=region_SiChuan comment="四川 绵阳 移动" } on-error={}
+:do { add address=223.85.98.192-223.85.98.255 list=region_SiChuan comment="四川 成都 移动" } on-error={}
+:do { add address=223.85.99.0-223.85.111.255 list=region_SiChuan comment="四川 绵阳 移动" } on-error={}
 :do { add address=223.85.112.0-223.85.119.255 list=region_SiChuan comment="四川 宜宾 移动" } on-error={}
 :do { add address=223.85.120.0-223.85.131.255 list=region_SiChuan comment="四川 广元 移动" } on-error={}
 :do { add address=223.85.132.0-223.85.135.255 list=region_SiChuan comment="四川 成都 移动" } on-error={}

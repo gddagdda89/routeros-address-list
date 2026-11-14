@@ -279,6 +279,7 @@
 :do { add address=39.155.96.0-39.155.127.255 list=region_NeiMengGu comment="内蒙古 呼伦贝尔 移动" } on-error={}
 :do { add address=42.123.64.0-42.123.95.255 list=region_NeiMengGu comment="内蒙古 呼和浩特 电信" } on-error={}
 :do { add address=42.187.120.0-42.187.123.255 list=region_NeiMengGu comment="内蒙古 呼和浩特 电信" } on-error={}
+:do { add address=43.180.32.0-43.180.63.255 list=region_NeiMengGu comment="内蒙古 乌兰察布 未知" } on-error={}
 :do { add address=43.226.116.0-43.226.119.255 list=region_NeiMengGu comment="内蒙古 未知 联通" } on-error={}
 :do { add address=43.240.222.0-43.240.222.255 list=region_NeiMengGu comment="内蒙古 呼和浩特 电信" } on-error={}
 :do { add address=43.243.228.0-43.243.228.3 list=region_NeiMengGu comment="内蒙古 乌海 联通" } on-error={}

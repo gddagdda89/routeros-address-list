@@ -3435,6 +3435,7 @@
 :do { add address=125.218.160.0-125.218.175.255 list=region_GuangDong comment="广东 惠州 教育网" } on-error={}
 :do { add address=125.218.176.0-125.218.255.255 list=region_GuangDong comment="广东 广州 教育网" } on-error={}
 :do { add address=128.108.216.0-128.108.219.255 list=region_GuangDong comment="广东 广州 未知" } on-error={}
+:do { add address=128.108.220.0-128.108.223.255 list=region_GuangDong comment="广东 深圳 未知" } on-error={}
 :do { add address=129.28.240.0-129.28.241.255 list=region_GuangDong comment="广东 广州 未知" } on-error={}
 :do { add address=129.204.0.0-129.204.255.255 list=region_GuangDong comment="广东 广州 未知" } on-error={}
 :do { add address=134.175.0.0-134.175.255.255 list=region_GuangDong comment="广东 广州 未知" } on-error={}

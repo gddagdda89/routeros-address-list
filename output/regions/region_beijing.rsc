@@ -33,7 +33,7 @@
 :do { add address=13.34.224.128-13.34.224.191 list=region_BeiJing comment="北京 未知 未知" } on-error={}
 :do { add address=13.34.229.192-13.34.229.223 list=region_BeiJing comment="北京 未知 未知" } on-error={}
 :do { add address=13.34.231.0-13.34.231.127 list=region_BeiJing comment="北京 未知 未知" } on-error={}
-:do { add address=13.34.232.128-13.34.232.255 list=region_BeiJing comment="北京 未知 未知" } on-error={}
+:do { add address=13.34.232.128-13.34.233.31 list=region_BeiJing comment="北京 未知 未知" } on-error={}
 :do { add address=13.34.235.64-13.34.235.127 list=region_BeiJing comment="北京 未知 未知" } on-error={}
 :do { add address=13.34.237.128-13.34.237.191 list=region_BeiJing comment="北京 未知 未知" } on-error={}
 :do { add address=13.34.238.0-13.34.238.63 list=region_BeiJing comment="北京 未知 未知" } on-error={}
@@ -2198,7 +2198,6 @@
 :do { add address=125.208.16.0-125.208.23.255 list=region_BeiJing comment="北京 未知 电信" } on-error={}
 :do { add address=125.208.24.0-125.208.44.255 list=region_BeiJing comment="北京 未知 未知" } on-error={}
 :do { add address=125.208.48.0-125.208.63.255 list=region_BeiJing comment="北京 未知 未知" } on-error={}
-:do { add address=128.108.220.0-128.108.223.255 list=region_BeiJing comment="北京 未知 未知" } on-error={}
 :do { add address=129.28.242.0-129.28.255.255 list=region_BeiJing comment="北京 未知 未知" } on-error={}
 :do { add address=129.211.250.0-129.211.251.255 list=region_BeiJing comment="北京 未知 未知" } on-error={}
 :do { add address=129.211.253.0-129.211.253.255 list=region_BeiJing comment="北京 未知 未知" } on-error={}
@@ -3251,7 +3250,9 @@
 :do { add address=220.154.255.0-220.154.255.255 list=region_BeiJing comment="北京 未知 未知" } on-error={}
 :do { add address=220.155.0.0-220.155.255.255 list=region_BeiJing comment="北京 海淀区 电信" } on-error={}
 :do { add address=220.167.244.96-220.167.244.127 list=region_BeiJing comment="北京 未知 未知" } on-error={}
-:do { add address=220.181.0.0-220.181.255.255 list=region_BeiJing comment="北京 未知 电信" } on-error={}
+:do { add address=220.181.0.0-220.181.41.91 list=region_BeiJing comment="北京 未知 电信" } on-error={}
+:do { add address=220.181.41.92 list=region_BeiJing comment="北京 西城区 未知" } on-error={}
+:do { add address=220.181.41.93-220.181.255.255 list=region_BeiJing comment="北京 未知 电信" } on-error={}
 :do { add address=220.192.0.0-220.192.0.255 list=region_BeiJing comment="北京 未知 联通" } on-error={}
 :do { add address=220.192.2.0-220.192.7.255 list=region_BeiJing comment="北京 未知 联通" } on-error={}
 :do { add address=220.192.248.0-220.192.255.255 list=region_BeiJing comment="北京 未知 联通" } on-error={}

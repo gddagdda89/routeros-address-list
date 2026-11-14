@@ -283,6 +283,8 @@
 :do { add address=124.224.170.0-124.224.179.255 list=region_NingXia comment="宁夏 中卫 电信" } on-error={}
 :do { add address=124.224.180.0-124.224.199.255 list=region_NingXia comment="宁夏 固原 电信" } on-error={}
 :do { add address=124.224.200.0-124.224.255.255 list=region_NingXia comment="宁夏 未知 电信" } on-error={}
+:do { add address=153.45.13.0-153.45.15.255 list=region_NingXia comment="宁夏 未知 未知" } on-error={}
+:do { add address=153.45.91.0-153.45.91.255 list=region_NingXia comment="宁夏 未知 未知" } on-error={}
 :do { add address=159.248.0.0-159.248.0.255 list=region_NingXia comment="宁夏 未知 未知" } on-error={}
 :do { add address=161.189.0.0-161.189.255.255 list=region_NingXia comment="宁夏 未知 未知" } on-error={}
 :do { add address=182.54.0.0-182.54.31.255 list=region_NingXia comment="宁夏 银川 联通" } on-error={}

@@ -2130,6 +2130,7 @@
 :do { add address=140.207.249.80-140.207.255.255 list=region_ShangHai comment="上海 未知 联通" } on-error={}
 :do { add address=140.210.128.0-140.210.159.255 list=region_ShangHai comment="上海 未知 未知" } on-error={}
 :do { add address=144.48.89.0-144.48.89.255 list=region_ShangHai comment="上海 未知 未知" } on-error={}
+:do { add address=144.178.30.64-144.178.30.79 list=region_ShangHai comment="上海 浦东新区 未知" } on-error={}
 :do { add address=150.129.192.0-150.129.195.255 list=region_ShangHai comment="上海 未知 未知" } on-error={}
 :do { add address=150.158.0.0-150.158.255.255 list=region_ShangHai comment="上海 未知 未知" } on-error={}
 :do { add address=157.20.136.0-157.20.137.255 list=region_ShangHai comment="上海 黄浦区 未知" } on-error={}
