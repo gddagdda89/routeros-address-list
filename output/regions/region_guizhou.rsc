@@ -42,6 +42,8 @@
 :do { add address=1.207.160.0-1.207.191.255 list=region_GuiZhou comment="贵州 安顺 电信" } on-error={}
 :do { add address=1.207.192.0-1.207.255.255 list=region_GuiZhou comment="贵州 铜仁 电信" } on-error={}
 :do { add address=36.111.160.0-36.111.191.255 list=region_GuiZhou comment="贵州 贵阳贵安新区 电信" } on-error={}
+:do { add address=36.134.90.0-36.134.90.255 list=region_GuiZhou comment="贵州 贵阳 移动" } on-error={}
+:do { add address=36.180.29.0-36.180.31.255 list=region_GuiZhou comment="贵州 六盘水 移动" } on-error={}
 :do { add address=36.193.98.0-36.193.102.255 list=region_GuiZhou comment="贵州 未知 铁通" } on-error={}
 :do { add address=39.135.8.0-39.135.8.159 list=region_GuiZhou comment="贵州 贵阳 移动" } on-error={}
 :do { add address=39.135.8.160-39.135.8.255 list=region_GuiZhou comment="贵州 未知 移动" } on-error={}
@@ -91,6 +93,7 @@
 :do { add address=39.144.227.0-39.144.227.255 list=region_GuiZhou comment="贵州 铜仁 移动" } on-error={}
 :do { add address=39.144.228.0-39.144.228.255 list=region_GuiZhou comment="贵州 黔东南苗族侗族自治州 移动" } on-error={}
 :do { add address=39.144.229.0-39.144.231.255 list=region_GuiZhou comment="贵州 贵阳 移动" } on-error={}
+:do { add address=39.144.233.0-39.144.233.255 list=region_GuiZhou comment="贵州 毕节 移动" } on-error={}
 :do { add address=42.123.96.0-42.123.127.255 list=region_GuiZhou comment="贵州 贵阳 电信" } on-error={}
 :do { add address=42.247.2.200-42.247.2.207 list=region_GuiZhou comment="贵州 贵阳 教育网" } on-error={}
 :do { add address=43.243.156.0-43.243.157.255 list=region_GuiZhou comment="贵州 毕节 联通" } on-error={}

@@ -1071,6 +1071,7 @@
 :do { add address=128.108.48.0-128.108.63.255 list=region_HuBei comment="湖北 武汉 未知" } on-error={}
 :do { add address=159.226.124.0-159.226.128.255 list=region_HuBei comment="湖北 武汉 教育网" } on-error={}
 :do { add address=159.226.162.0-159.226.163.255 list=region_HuBei comment="湖北 武汉 教育网" } on-error={}
+:do { add address=163.52.28.0-163.52.29.255 list=region_HuBei comment="湖北 未知 未知" } on-error={}
 :do { add address=171.40.0.0-171.40.218.255 list=region_HuBei comment="湖北 孝感 电信" } on-error={}
 :do { add address=171.40.219.0-171.40.255.255 list=region_HuBei comment="湖北 未知 电信" } on-error={}
 :do { add address=171.41.0.0-171.41.113.255 list=region_HuBei comment="湖北 黄冈 电信" } on-error={}

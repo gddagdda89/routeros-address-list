@@ -219,6 +219,7 @@
 :do { add address=61.240.58.0-61.240.59.255 list=region_ShanXi comment="山西 阳泉 联通" } on-error={}
 :do { add address=61.240.60.0-61.240.61.255 list=region_ShanXi comment="山西 吕梁 联通" } on-error={}
 :do { add address=61.240.62.0-61.240.63.255 list=region_ShanXi comment="山西 朔州 联通" } on-error={}
+:do { add address=69.195.175.90-69.195.175.99 list=region_ShanXi comment="山西 越南 未知" } on-error={}
 :do { add address=101.39.226.128-101.39.226.255 list=region_ShanXi comment="山西 太原 鹏博士" } on-error={}
 :do { add address=101.39.232.0-101.39.232.127 list=region_ShanXi comment="山西 太原 鹏博士" } on-error={}
 :do { add address=101.247.128.0-101.247.191.255 list=region_ShanXi comment="山西 太原 鹏博士" } on-error={}

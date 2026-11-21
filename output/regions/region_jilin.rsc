@@ -533,6 +533,7 @@
 :do { add address=125.223.220.0-125.223.251.255 list=region_JiLin comment="吉林 长春 教育网" } on-error={}
 :do { add address=125.223.252.0-125.223.252.255 list=region_JiLin comment="吉林 吉林市 教育网" } on-error={}
 :do { add address=125.223.253.0-125.223.255.255 list=region_JiLin comment="吉林 长春 教育网" } on-error={}
+:do { add address=136.23.4.196-136.23.4.197 list=region_JiLin comment="吉林 英国 未知" } on-error={}
 :do { add address=136.23.61.80 list=region_JiLin comment="吉林 英国 未知" } on-error={}
 :do { add address=139.208.0.0-139.208.31.255 list=region_JiLin comment="吉林 未知 联通" } on-error={}
 :do { add address=139.208.32.0-139.208.255.255 list=region_JiLin comment="吉林 延边朝鲜族自治州 联通" } on-error={}
@@ -582,14 +583,8 @@
 :do { add address=139.214.223.23-139.215.255.255 list=region_JiLin comment="吉林 长春 联通" } on-error={}
 :do { add address=159.226.122.0-159.226.123.255 list=region_JiLin comment="吉林 长春 教育网" } on-error={}
 :do { add address=159.226.165.0-159.226.166.255 list=region_JiLin comment="吉林 长春 教育网" } on-error={}
-:do { add address=162.120.168.88 list=region_JiLin comment="吉林 英国 未知" } on-error={}
-:do { add address=162.120.171.88 list=region_JiLin comment="吉林 英国 未知" } on-error={}
-:do { add address=162.120.174.36 list=region_JiLin comment="吉林 英国 未知" } on-error={}
-:do { add address=162.120.176.36 list=region_JiLin comment="吉林 英国 未知" } on-error={}
-:do { add address=162.120.208.91 list=region_JiLin comment="吉林 英国 未知" } on-error={}
-:do { add address=162.120.214.84 list=region_JiLin comment="吉林 英国 未知" } on-error={}
-:do { add address=162.120.234.108-162.120.234.109 list=region_JiLin comment="吉林 英国 未知" } on-error={}
-:do { add address=162.120.247.107 list=region_JiLin comment="吉林 英国 未知" } on-error={}
+:do { add address=162.120.161.34-162.120.161.35 list=region_JiLin comment="吉林 英国 未知" } on-error={}
+:do { add address=162.120.172.170-162.120.172.171 list=region_JiLin comment="吉林 英国 未知" } on-error={}
 :do { add address=175.16.0.0-175.16.255.255 list=region_JiLin comment="吉林 吉林市 联通" } on-error={}
 :do { add address=175.17.0.0-175.17.147.255 list=region_JiLin comment="吉林 长春 联通" } on-error={}
 :do { add address=175.17.148.0-175.17.148.255 list=region_JiLin comment="吉林 未知 联通" } on-error={}

@@ -116,6 +116,7 @@
 :do { add address=36.99.185.0-36.99.191.255 list=region_HeNan comment="河南 未知 电信" } on-error={}
 :do { add address=36.99.192.0-36.99.255.255 list=region_HeNan comment="河南 郑州 电信" } on-error={}
 :do { add address=36.133.38.0-36.133.38.255 list=region_HeNan comment="河南 未知 移动" } on-error={}
+:do { add address=36.133.40.0-36.133.40.255 list=region_HeNan comment="河南 郑州 移动" } on-error={}
 :do { add address=36.133.214.0-36.133.214.255 list=region_HeNan comment="河南 未知 移动" } on-error={}
 :do { add address=36.138.8.0-36.138.15.255 list=region_HeNan comment="河南 郑州 移动" } on-error={}
 :do { add address=36.190.64.0-36.190.127.255 list=region_HeNan comment="河南 未知 移动" } on-error={}
@@ -1393,12 +1394,9 @@
 :do { add address=125.219.160.0-125.219.161.255 list=region_HeNan comment="河南 三门峡 教育网" } on-error={}
 :do { add address=125.219.162.0-125.219.255.255 list=region_HeNan comment="河南 郑州 教育网" } on-error={}
 :do { add address=128.108.200.0-128.108.215.255 list=region_HeNan comment="河南 郑州 未知" } on-error={}
-:do { add address=162.120.158.162 list=region_HeNan comment="河南 韩国 未知" } on-error={}
-:do { add address=162.120.159.162 list=region_HeNan comment="河南 韩国 未知" } on-error={}
-:do { add address=162.120.162.143 list=region_HeNan comment="河南 韩国 未知" } on-error={}
-:do { add address=162.120.163.143 list=region_HeNan comment="河南 韩国 未知" } on-error={}
-:do { add address=162.120.201.166 list=region_HeNan comment="河南 韩国 未知" } on-error={}
-:do { add address=162.120.218.1 list=region_HeNan comment="河南 韩国 未知" } on-error={}
+:do { add address=136.23.13.225 list=region_HeNan comment="河南 韩国 未知" } on-error={}
+:do { add address=162.120.177.219 list=region_HeNan comment="河南 韩国 未知" } on-error={}
+:do { add address=162.120.209.76 list=region_HeNan comment="河南 韩国 未知" } on-error={}
 :do { add address=163.53.56.0-163.53.59.255 list=region_HeNan comment="河南 未知 移动" } on-error={}
 :do { add address=171.8.0.0-171.8.21.255 list=region_HeNan comment="河南 郑州 电信" } on-error={}
 :do { add address=171.8.22.0-171.8.22.255 list=region_HeNan comment="河南 南阳 电信" } on-error={}

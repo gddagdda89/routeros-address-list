@@ -420,8 +420,7 @@
 :do { add address=36.111.32.0-36.111.63.255 list=region_GuangDong comment="广东 未知 电信" } on-error={}
 :do { add address=36.133.1.0-36.133.1.255 list=region_GuangDong comment="广东 广州 移动" } on-error={}
 :do { add address=36.133.176.0-36.133.184.255 list=region_GuangDong comment="广东 广州 移动" } on-error={}
-:do { add address=36.141.74.0-36.141.74.255 list=region_GuangDong comment="广东 珠海 移动" } on-error={}
-:do { add address=36.141.107.0-36.141.107.255 list=region_GuangDong comment="广东 珠海 移动" } on-error={}
+:do { add address=36.141.74.0-36.141.109.255 list=region_GuangDong comment="广东 珠海 移动" } on-error={}
 :do { add address=36.193.34.0-36.193.63.255 list=region_GuangDong comment="广东 未知 铁通" } on-error={}
 :do { add address=36.255.164.0-36.255.167.255 list=region_GuangDong comment="广东 深圳 联通" } on-error={}
 :do { add address=38.101.116.0-38.101.116.255 list=region_GuangDong comment="广东 深圳 未知" } on-error={}
@@ -1067,6 +1066,7 @@
 :do { add address=81.71.60.0-81.71.60.255 list=region_GuangDong comment="广东 深圳 未知" } on-error={}
 :do { add address=81.71.61.0-81.71.197.255 list=region_GuangDong comment="广东 广州 未知" } on-error={}
 :do { add address=81.71.200.0-81.71.255.255 list=region_GuangDong comment="广东 广州 未知" } on-error={}
+:do { add address=85.209.217.0-85.209.217.255 list=region_GuangDong comment="广东 深圳 未知" } on-error={}
 :do { add address=91.234.36.0-91.234.36.255 list=region_GuangDong comment="广东 中山 未知" } on-error={}
 :do { add address=101.33.192.0-101.33.255.255 list=region_GuangDong comment="广东 广州 未知" } on-error={}
 :do { add address=101.47.64.0-101.47.95.255 list=region_GuangDong comment="广东 广州 鹏博士" } on-error={}

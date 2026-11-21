@@ -134,8 +134,7 @@
 :do { add address=36.139.92.0-36.140.70.255 list=region_GanSu comment="甘肃 兰州 移动" } on-error={}
 :do { add address=36.140.72.0-36.140.207.255 list=region_GanSu comment="甘肃 兰州 移动" } on-error={}
 :do { add address=36.140.212.0-36.141.73.255 list=region_GanSu comment="甘肃 兰州 移动" } on-error={}
-:do { add address=36.141.75.0-36.141.106.255 list=region_GanSu comment="甘肃 兰州 移动" } on-error={}
-:do { add address=36.141.108.0-36.142.127.255 list=region_GanSu comment="甘肃 兰州 移动" } on-error={}
+:do { add address=36.141.110.0-36.142.127.255 list=region_GanSu comment="甘肃 兰州 移动" } on-error={}
 :do { add address=36.142.128.0-36.142.131.255 list=region_GanSu comment="甘肃 白银 移动" } on-error={}
 :do { add address=36.142.132.0-36.142.135.255 list=region_GanSu comment="甘肃 张掖 移动" } on-error={}
 :do { add address=36.142.136.0-36.142.139.255 list=region_GanSu comment="甘肃 武威 移动" } on-error={}
