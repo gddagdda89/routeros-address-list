@@ -8,6 +8,7 @@ Retrieve the latest IPv4 and IPv6 block lists from Cloudflare official and gener
 
 import os
 import io
+import sys
 import requests
 from typing import Dict
 from src.common.config import get_setting, resolve_path
@@ -76,8 +77,12 @@ def generate_cloudflare_rsc(output_path: str) -> None:
     safe_write_file(output_path, content_io.getvalue())
     logger.info(f"成功安全生成 Cloudflare 脚本文件: {output_path}")
 
-def main() -> None:
-    """主程序入口 / Main entry point"""
+def main() -> bool:
+    """主程序入口 / Main entry point
+
+    Returns:
+        True: 产物已成功生成；False: 校验/抓取失败，旧产物被保留。
+    """
     # 从配置中解析输出目录 / Parse output directory from config
     output_dir = resolve_path(get_setting("paths", "output_dir", "output"))
     output_file = os.path.join(output_dir, "cloudflare.rsc")
@@ -86,11 +91,14 @@ def main() -> None:
     try:
         generate_cloudflare_rsc(output_file)
         logger.info("Cloudflare IP 地址段脚本生成流程已结束。")
+        return True
     except DataValidationError as val_err:
         logger.critical(f"数据校验未通过，中止生成并保留旧配置: {val_err}")
+        return False
     except Exception as e:
         logger.error(f"生成 Cloudflare 脚本失败: {e}", exc_info=True)
+        return False
 
 if __name__ == "__main__":
-    main()
+    sys.exit(0 if main() else 1)
 

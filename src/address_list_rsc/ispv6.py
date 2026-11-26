@@ -7,6 +7,7 @@ Retrieve major ISP IPv6 lists from clang.cn, generate RouterOS address list scri
 """
 
 import os
+import sys
 import requests
 import difflib
 import io
@@ -75,8 +76,12 @@ def generate_ipv6_content(rule_map: Dict[str, str], session: requests.Session) -
 
     return content_io.getvalue()
 
-def main() -> None:
-    """主程序入口 / Main entry point"""
+def main() -> bool:
+    """主程序入口 / Main entry point
+
+    Returns:
+        True: 产物已成功生成或无需更新；False: 校验/写入失败，旧产物被保留。
+    """
     # 从配置中解析输出路径 / Parse output path from config
     output_dir = resolve_path(get_setting("paths", "output_dir", "output"))
     rsc_out = os.path.join(output_dir, "ispv6.rsc")
@@ -102,7 +107,7 @@ def main() -> None:
         new_content = generate_ipv6_content(RULE_DICT, session)
     except DataValidationError as val_err:
         logger.critical(f"IPv6 数据校验未通过，中止生成并保留旧配置: {val_err}")
-        return
+        return False
 
     # 步骤3: 将新内容原子写入文件 / Step 3: Write new content atomically
     try:
@@ -110,7 +115,7 @@ def main() -> None:
         logger.info(f"成功安全生成 IPv6 导入脚本文件: {rsc_out}")
     except IOError as e:
         logger.error(f"原子写入文件 {rsc_out} 失败: {e}")
-        return
+        return False
 
     # 步骤4: 如果存在旧内容，进行比对并显示差异 / Step 4: Perform diff analysis and display diff
     if old_content and old_content != new_content:
@@ -127,5 +132,7 @@ def main() -> None:
     elif old_content and old_content == new_content:
         logger.info("新生成的脚本内容与旧文件一致，无变化。")
 
+    return True
+
 if __name__ == "__main__":
-    main()
+    sys.exit(0 if main() else 1)

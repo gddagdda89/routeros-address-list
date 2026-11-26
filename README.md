@@ -95,16 +95,19 @@
 /import file-name=region_guangdong.rsc
 ```
 
-### 🚀 进阶技巧：零断流原子热替换（避免白名单真空期）
-默认脚本会先执行 `remove` 清空列表再逐行 `add`。如果不想在导入的 2~3 秒内产生白名单断流真空期，可在 RouterOS 终端使用两行命令完成原子切换：
+### 🛟 导入前备份与快速回滚
+生成的脚本会先执行 `remove` 清空目标列表、再逐行 `add`，因此导入过程中存在 1~3 秒的窗口期（产物中不存在 `_stage` 列表，无法直接做原子切换）。若希望升级失败时能快速回滚，可在导入前把旧列表整体改名为备份表：
 
 ```routeros
-# 1. 导入新规则并统一标记为 _stage 临时表
+# 1. 备份当前列表（瞬间完成）
+/ip firewall address-list set [find where list="region_JiangSu"] list="region_JiangSu_bak"
+# 2. 导入新规则
 /import file-name=region_jiangsu.rsc
-# 2. 一键批量热替换
-/ip firewall address-list remove [find where list="region_JiangSu"]
-/ip firewall address-list set [find where list="region_JiangSu_stage"] list="region_JiangSu"
+# 3. 验证无误后删除备份；若出现异常，把第 1 步的 list 改回 region_JiangSu 即可回滚
+/ip firewall address-list remove [find where list="region_JiangSu_bak"]
 ```
+
+> 注意：上述流程只能保证可回滚，不能消除导入窗口期。
 
 ---
 
@@ -171,7 +174,8 @@ add chain=forward action=drop protocol=udp dst-port=3478,5349,19302-19309 \
 ## 防护机制
 
 为防止上游数据源宕机或网络抓取超时导致 RouterOS 上的地址列表被清空，代码内设置了安全保护：
-- **抓取门限熔断**：核心运营商单项若小于 100 条、全国段小于 1,000 条、或全省份汇总小于 30,000 条时，脚本立即报错并终止，保留原有旧文件，拒绝生成残缺脚本。
+- **抓取门限熔断**：核心运营商单项若小于 100 条、全国段小于 1,000 条、全省份汇总小于 30,000 条、或单个省份小于 20 条时，脚本立即报错并终止，保留原有旧文件，拒绝生成残缺脚本。
+- **失败即失败**：任一生成器校验不通过时，`build_all` 以非 0 退出码结束，CI 会标记为失败，不会再出现"产物是旧的但流水线全绿"的情况。
 - **原子替换**：脚本先写入临时文件，全部校验通过后再替换原文件，避免写入中断产生空配置。
 
 ---

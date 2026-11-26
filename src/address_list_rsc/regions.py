@@ -10,6 +10,7 @@ merge adjacent continuous subnets, and generate standard RouterOS .rsc address l
 
 import os
 import io
+import sys
 import shutil
 import struct
 import socket
@@ -80,6 +81,9 @@ ISP_KEYWORD_MAP: List[Tuple[str, str]] = [
 
 # 全国省份合并后总规则门限（正常约 70,000+ 条）
 MIN_TOTAL_REGIONS_COUNT: int = 30000
+
+# 单个省份最少规则门限（正常条目最少的澳门也有 70+ 条），低于此值视为数据源异常
+MIN_PROVINCE_COUNT: int = 20
 
 
 def parse_all_provincial_records(data: bytes) -> Dict[str, List[List[Any]]]:
@@ -179,6 +183,18 @@ def generate_all_regions(output_dir: str, qqwry_path: Optional[str] = None) -> N
             "触发熔断保护，拒绝覆盖产物以防白名单被意外清空！"
         )
 
+    # 单省门限校验：防止某省数据异常时产出"只有 remove 没有 add"的脚本，把该省白名单清空
+    insufficient = [
+        f"{name}({len(prov_results.get(name, []))})"
+        for name, _, _ in PROVINCES
+        if len(prov_results.get(name, [])) < MIN_PROVINCE_COUNT
+    ]
+    if insufficient:
+        raise DataValidationError(
+            f"以下省份地址段条目数低于单省安全门限 ({MIN_PROVINCE_COUNT}): {', '.join(insufficient)}！"
+            "触发熔断保护，拒绝覆盖产物以防对应省份白名单被清空！"
+        )
+
     # 确保 output/regions/ 目录存在
     regions_dir = os.path.join(output_dir, "regions")
     os.makedirs(regions_dir, exist_ok=True)
@@ -205,19 +221,26 @@ def generate_all_regions(output_dir: str, qqwry_path: Optional[str] = None) -> N
     logger.info(f"全国 34 个省份地址列表已成功写入至: {regions_dir}/")
 
 
-def main() -> None:
-    """主程序入口 / Main entry point"""
+def main() -> bool:
+    """主程序入口 / Main entry point
+
+    Returns:
+        True: 产物已成功生成；False: 校验/抓取失败，旧产物被保留。
+    """
     output_dir = resolve_path(get_setting("paths", "output_dir", "output"))
 
     logger.info("开始执行全国 34 省份 IP 地址列表批量生成...")
     try:
         generate_all_regions(output_dir)
         logger.info("全国各省份 IP 地址列表生成流程已全部结束。")
+        return True
     except DataValidationError as val_err:
         logger.critical(f"数据校验未通过，中止生成并保留旧配置: {val_err}")
+        return False
     except Exception as e:
         logger.error(f"生成全国省份 IP 地址段脚本失败: {e}", exc_info=True)
+        return False
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(0 if main() else 1)

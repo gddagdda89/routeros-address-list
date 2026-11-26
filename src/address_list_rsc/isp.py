@@ -7,6 +7,7 @@ Retrieve major ISP IPv4 lists from clang.cn, generate RouterOS address list scri
 """
 
 import os
+import sys
 import requests
 import difflib
 import io
@@ -118,8 +119,12 @@ def generate_rsc_content(isp_data: Dict[str, List[str]]) -> str:
     
     return content_io.getvalue()
 
-def main() -> None:
-    """主程序入口 / Main entry point"""
+def main() -> bool:
+    """主程序入口 / Main entry point
+
+    Returns:
+        True: 产物已成功生成或无需更新；False: 校验/写入失败，旧产物被保留。
+    """
     # 从配置中解析输出路径 / Parse output path from config
     output_dir = resolve_path(get_setting("paths", "output_dir", "output"))
     rsc_out = os.path.join(output_dir, "isp.rsc")
@@ -147,7 +152,7 @@ def main() -> None:
         new_content = generate_rsc_content(isp_data)
     except DataValidationError as val_err:
         logger.critical(f"数据校验失败，中止生成并保留旧配置: {val_err}")
-        return
+        return False
 
     # 步骤3: 使用原子写入保存新内容 / Step 3: Write new content atomically
     try:
@@ -155,7 +160,7 @@ def main() -> None:
         logger.info(f"成功原子写入导入脚本文件: {rsc_out}")
     except IOError as e:
         logger.error(f"原子写入脚本文件 {rsc_out} 失败: {e}")
-        return
+        return False
 
     # 步骤4: 进行内容比对并输出差异 / Step 4: Perform diff analysis and display diff
     if old_content and old_content != new_content:
@@ -172,5 +177,7 @@ def main() -> None:
     elif old_content and old_content == new_content:
         logger.info("新生成的脚本内容与旧文件一致，无变化。")
 
+    return True
+
 if __name__ == "__main__":
-    main()
+    sys.exit(0 if main() else 1)

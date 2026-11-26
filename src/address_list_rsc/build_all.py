@@ -39,7 +39,9 @@ def main() -> None:
         print(f"\n[{i}/{len(tasks)}] 正在生成: {name} ...")
         t0 = time.time()
         try:
-            task_func()
+            # 生成器在校验失败时返回 False（不抛异常），必须显式判断，避免 CI 假绿
+            if task_func() is False:
+                raise RuntimeError("数据校验未通过，已保留旧产物（详见日志）")
             elapsed = time.time() - t0
             print(f"  -> ✅ 成功完成，耗时: {elapsed:.2f} 秒")
             success_count += 1

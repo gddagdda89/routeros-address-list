@@ -115,3 +115,38 @@ def test_all_regions_threshold_guard(monkeypatch, tmp_path):
     assert "低于安全门限" in str(excinfo.value)
 
 
+def test_regions_per_province_threshold_guard(monkeypatch, tmp_path):
+    """验证单个省份条目不足时触发熔断，避免该省白名单被清空"""
+    from src.address_list_rsc.regions import PROVINCES, MIN_TOTAL_REGIONS_COUNT
+
+    # 其余省份条目充足使总量达标，仅澳门为空
+    per_prov = MIN_TOTAL_REGIONS_COUNT // (len(PROVINCES) - 1) + 10
+    pool = {
+        name: [
+            [16777216 + i * 256, 16777471 + i * 256, "测试市", "电信"]
+            for i in range(per_prov)
+        ]
+        for name, _, _ in PROVINCES
+    }
+    pool["澳门"] = []
+
+    monkeypatch.setattr(
+        "src.address_list_rsc.regions.parse_all_provincial_records",
+        lambda buf: pool,
+    )
+    dummy_db = tmp_path / "dummy_qqwry.dat"
+    dummy_db.write_bytes(b"dummy" * 20)
+    monkeypatch.setattr(
+        "src.address_list_rsc.regions.ensure_qqwry_file",
+        lambda path, url: str(dummy_db)
+    )
+
+    out_dir = tmp_path / "output"
+    with pytest.raises(DataValidationError) as excinfo:
+        generate_all_regions(str(out_dir), qqwry_path=str(dummy_db))
+    assert "单省安全门限" in str(excinfo.value)
+    assert "澳门" in str(excinfo.value)
+    # 熔断后不应写出任何省份文件
+    assert not (out_dir / "regions").exists()
+
+
