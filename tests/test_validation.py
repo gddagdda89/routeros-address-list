@@ -117,7 +117,11 @@ def test_all_regions_threshold_guard(monkeypatch, tmp_path):
 
 def test_regions_per_province_threshold_guard(monkeypatch, tmp_path):
     """验证单个省份条目不足时触发熔断，避免该省白名单被清空"""
-    from src.address_list_rsc.regions import PROVINCES, MIN_TOTAL_REGIONS_COUNT
+    from src.address_list_rsc.regions import (
+        generate_all_regions,
+        PROVINCES,
+        MIN_TOTAL_REGIONS_COUNT,
+    )
 
     # 其余省份条目充足使总量达标，仅澳门为空
     per_prov = MIN_TOTAL_REGIONS_COUNT // (len(PROVINCES) - 1) + 10
